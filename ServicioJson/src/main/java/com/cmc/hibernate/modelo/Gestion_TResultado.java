@@ -50,18 +50,23 @@ public class Gestion_TResultado implements IGestion_TObjeto {
 	public boolean cargarHistorico(ObjOrigen objeto,Diccionario diccionario) {
 		try  {
 			
-			List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());
-			
-			TResultado resultado = new TResultado();
+			List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());			
 			List<TResultado> resultados = new ArrayList<TResultado>();
 			
 			for (Dato o : objeto.getDatos()) {
+				
+				TResultado resultado = new TResultado();
 				resultado.setFecha(Conversiones.toTimestamp(objeto.getFecha()));
 				resultado.setValor(Conversiones.toFloat(o.getValor()));
 				resultado.setTagName(tagNames.stream().filter(x -> o.getId().equals(x.getIdPlc())).map(TagDictionary::getTagname)
 						.findAny().orElse(""));
-				resultados.add(resultado);
-				resultado=new TResultado();
+				if (resultado.getFecha()== null || resultado.getValor() == null || resultado.getTagName() == ("")) {
+					
+					log.info("El objeto : " + o.toString() + "no se ha insertado en la base de datos");
+				}
+				else {					
+					resultados.add(resultado);	
+				}
 			}
 			// Save de los resultados
 			tResultado_dao.cargarResultados(resultados);
