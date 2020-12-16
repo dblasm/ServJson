@@ -1,7 +1,7 @@
 package com.cmc.hibernate.modelo;
 
 
-import java.sql.Timestamp;
+
 import java.util.ArrayList;
 import java.util.List;
 import org.slf4j.Logger;
@@ -16,6 +16,7 @@ import com.cmc.objetos.Diccionario;
 import com.cmc.objetos.ObjOrigen;
 import com.cmc.objetos.TagDictionary;
 import com.cmc.persistencia.TResultado;
+import com.cmc.util.Conversiones;
 
 /**
  * 
@@ -49,15 +50,14 @@ public class Gestion_TResultado implements IGestion_TObjeto {
 	public boolean cargarHistorico(ObjOrigen objeto,Diccionario diccionario) {
 		try  {
 			
-			
 			List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());
 			
 			TResultado resultado = new TResultado();
 			List<TResultado> resultados = new ArrayList<TResultado>();
 			
 			for (Dato o : objeto.getDatos()) {
-				resultado.setFecha(Timestamp.valueOf(objeto.getFecha()));
-				resultado.setValor(Float.parseFloat(o.getValor()));
+				resultado.setFecha(Conversiones.toTimestamp(objeto.getFecha()));
+				resultado.setValor(Conversiones.toFloat(o.getValor()));
 				resultado.setTagName(tagNames.stream().filter(x -> o.getId().equals(x.getIdPlc())).map(TagDictionary::getTagname)
 						.findAny().orElse(""));
 				resultados.add(resultado);
