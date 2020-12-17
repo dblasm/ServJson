@@ -4,13 +4,13 @@ package com.cmc.hibernate.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.cmc.hibernate.dao.TResultadoDAO;
+import com.cmc.log4j.Traza_Log;
 import com.cmc.objetos.Dato;
 import com.cmc.objetos.Diccionario;
 import com.cmc.objetos.ObjOrigen;
@@ -27,23 +27,17 @@ import com.cmc.util.Conversiones;
  *
  */
 
+// TODO: Asignar anotación correcta!!!!
 @Component("gestion_tObjeto")
 @Service
 public class Gestion_TResultado implements IGestion_TObjeto {
-
-	private static final Logger log = LoggerFactory.getLogger(Gestion_TResultado.class);
-	
-
-	public static Logger getLog() {
-		return log;
-	}
 
 
 	@Autowired
 	private TResultadoDAO tResultado_dao;
 	
 
-	// *************** CONSULTAS ***************
+	//Métodos propios
 	
 	@Override
 	@Transactional
@@ -60,20 +54,23 @@ public class Gestion_TResultado implements IGestion_TObjeto {
 				resultado.setValor(Conversiones.toFloat(o.getValor()));
 				resultado.setTagName(tagNames.stream().filter(x -> o.getId().equals(x.getIdPlc())).map(TagDictionary::getTagname)
 						.findAny().orElse(""));
+								
 				if (resultado.getFecha()== null || resultado.getValor() == null || resultado.getTagName() == ("")) {
 					
-					log.info("El objeto : " + o.toString() + "no se ha insertado en la base de datos");
+				Traza_Log.registro("El objeto : " + resultado.toString() + "no se ha insertado en la base de datos",5);
 				}
-				else {					
+				else {		
 					resultados.add(resultado);	
 				}
+			
 			}
+			
 			// Save de los resultados
 			tResultado_dao.cargarResultados(resultados);
 			
 			return true;
 		} catch (Exception e) {
-			log.info(e.getMessage());
+			Traza_Log.registro(e.getMessage());
 			return false;
 		}
 	}

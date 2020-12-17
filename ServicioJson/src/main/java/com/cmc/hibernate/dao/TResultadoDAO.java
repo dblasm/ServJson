@@ -1,21 +1,20 @@
 package com.cmc.hibernate.dao;
 
 import java.util.List;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import com.cmc.hibernate.repositorio.TResultadoRepositorio;
+import com.cmc.log4j.Traza_Log;
 import com.cmc.persistencia.TResultado;
 
 @Repository
 public class TResultadoDAO {
-	private static final Logger log = LoggerFactory.getLogger(TResultadoDAO.class);
-
-
+	
 	@Autowired
 	private TResultadoRepositorio tResultado_repo;
+
+	//Métodos CRUD Hibernate
 	
 	@Transactional
 	public boolean cargarResultados(List<TResultado> resultados) {
@@ -25,7 +24,7 @@ public class TResultadoDAO {
 			return true;
 
 		} catch (Exception e) {
-			log.info(e.getMessage());
+			Traza_Log.registro(e.getMessage());
 			return false;
 		}
 	}

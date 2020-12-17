@@ -9,6 +9,4 @@ import com.cmc.persistencia.TObjeto;
 @Repository
 public interface TObjetoRepositorio extends JpaRepository <TObjeto, String>{
 	
-	
-	
 }

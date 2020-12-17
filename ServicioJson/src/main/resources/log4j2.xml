@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<!-- Salida de mensajes por fichero append= false, sobreescribe fichero. 
+			true continúa desde el último registro -->
+		<File name="fichero" fileName="c:/ServicioJson_log4j2/RegistrosTrazas_ ServicioJson.log" append="false">
+			<PatternLayout pattern="%d %t %-5p %c{2} - %m%n" />
+		</File>
+		<!-- Salida de mensajes por consola -->
+		<Console name="consola" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n" />
+		</Console>
+	</Appenders>
+	<!-- Localiza los complementos de ConfigurationFactory en la ruta indicada. 
+		Se establece como nivel de base "info". Registro de la salida por consola 
+		y en fichero. Los mensajes con nivel inferior no serán mostrados. -->
+	<Loggers>
+		<Logger name="org.apache.log4j.xml" level="info" />
+		<Root level="info">
+			<AppenderRef ref="consola" />
+			<AppenderRef ref="fichero" />
+		</Root>
+	</Loggers>
+</Configuration>

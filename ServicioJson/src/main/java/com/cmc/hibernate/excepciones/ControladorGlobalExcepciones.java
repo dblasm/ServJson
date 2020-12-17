@@ -23,5 +23,6 @@ public class ControladorGlobalExcepciones {
 		DetallesError detallesError = new DetallesError(new Date(), ex.getMessage(), request.getDescription(false));
         return new ResponseEntity<>(detallesError, HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
 	
 }

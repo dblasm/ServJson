@@ -20,22 +20,18 @@ import com.cmc.hibernate.modelo.Gestion_TObjeto;
 @Controller
 @RequestMapping("/historico/v0/")
 public class Controlador {
-
 	
-	// ******************* MÉTODOS PROPIOS *******************
-	private static Diccionario diccionario;
+	private static Diccionario diccionario; 
+
+//Inyección beans
+	
 	@Autowired
 	private Gestion_TResultado gestion_tObjeto;
 	@Autowired
 	private Gestion_TObjeto gestion_tObjetoRepositorio;
 	
 
-	
-
-	//public Controlador() {
-	//	super();
-//		diccionario = new Diccionario();		
-	//}
+//Consulta Json
 
 	@GetMapping("/datosHistoricos/")
     public ResponseEntity<Boolean> datosHistoricos(@Valid @RequestBody ObjOrigen objeto) {

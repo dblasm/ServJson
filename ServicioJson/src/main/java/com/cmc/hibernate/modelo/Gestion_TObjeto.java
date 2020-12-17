@@ -19,22 +19,15 @@ import com.cmc.objetos.Diccionario;
  *
  */
 
+// TODO: Asignar anotación correcta!!!!
 @Component("gestion_tObjetoRepositorio")
 @Service
 public class Gestion_TObjeto implements IGestion_TResultado {
 
-	private static final Logger log = LoggerFactory.getLogger(Gestion_TObjeto.class);
-	
-
-	public static Logger getLog() {
-		return log;
-	}
 
 	@Autowired
 	private TObjetoDAO tObjetoDAO;
 	
-
-	// *************** CONSULTAS ***************
 	
 	// Crea el diccionario
 	public  Diccionario crearDiccionario(){
