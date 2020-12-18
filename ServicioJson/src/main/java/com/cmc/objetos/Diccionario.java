@@ -36,7 +36,8 @@ public class Diccionario {
 					if (!dicc.containsKey(item.getIp())) {
 						dicc.put(item.getIp(), new ArrayList<TagDictionary>());
 					}
-					dicc.get(item.getIp()).add(new TagDictionary(item.getTagName(), item.getIdValor()));
+					dicc.get(item.getIp()).add(new TagDictionary(item.getTagName(), item.getIdPlc(),item.getEscalado(),item.isEsEscalado(),item.isAgregado(),item.getTiempoAgregado()));
+					
 				}
 	
 				Traza_Log.registro(" ##### Diccionario generado:" + dicc.toString() + " ######");
