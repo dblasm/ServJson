@@ -1,0 +1,15 @@
+2020-12-17 22:48:16.162  INFO 14148 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 14148 (C:\workspace-json\repository\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServicioJson)
+2020-12-17 22:48:16.169  INFO 14148 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-17 22:50:16.174  INFO 4192 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 4192 (C:\workspace-json\repository\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServicioJson)
+2020-12-17 22:50:16.190  INFO 4192 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-17 22:51:13.444  INFO 11652 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 11652 (C:\workspace-json\repository\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServicioJson)
+2020-12-17 22:51:13.448 DEBUG 11652 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-17 22:51:13.453  INFO 11652 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-17 22:51:50.069  INFO 11652 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 37.24 seconds (JVM running for 38.673)
+2020-12-17 23:05:51.468  INFO 11652 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-17 23:05:51.469  INFO 11652 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{x.x.x.x=[TagDictionary [tagname=nr1, idPlc=reactiva], TagDictionary [tagname=nr2, idPlc=activa], TagDictionary [tagname=nr3, idPlc=potencia]]} ######
+2020-12-17 23:05:51.521  INFO 11652 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : El objeto : TResultado [id=0, fecha=2020-12-11 11:23:12.0, valor=null, tagName=nr2]no se ha insertado en la base de datos
+2020-12-17 23:24:34.895  INFO 14904 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 14904 (C:\workspace-json\repository\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServicioJson)
+2020-12-17 23:24:34.900 DEBUG 14904 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-17 23:24:34.904  INFO 14904 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-17 23:24:55.464  INFO 14904 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 21.416 seconds (JVM running for 23.177)

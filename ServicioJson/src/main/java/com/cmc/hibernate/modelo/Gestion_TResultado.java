@@ -1,9 +1,8 @@
 package com.cmc.hibernate.modelo;
 
-
-
 import java.util.ArrayList;
 import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -57,7 +56,7 @@ public class Gestion_TResultado implements IGestion_TObjeto {
 								
 				if (resultado.getFecha()== null || resultado.getValor() == null || resultado.getTagName() == ("")) {
 					
-				Traza_Log.registro("El objeto : " + resultado.toString() + "no se ha insertado en la base de datos",5);
+				Traza_Log.registro("El objeto : " + resultado.toString() + "no se ha insertado en la base de datos",Traza_Log.LOG_ERROR);
 				}
 				else {		
 					resultados.add(resultado);	
