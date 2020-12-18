@@ -20,8 +20,15 @@ public class TResultadoDAO {
 	public boolean cargarResultados(List<TResultado> resultados) {
 		try  {
 			
-			tResultado_repo.saveAll(resultados);
-			return true;
+			if (resultados != null) {			
+				tResultado_repo.saveAll(resultados);
+				return true;
+			}else {
+				
+				Traza_Log.registro("No hay elementos a insertar en la tabla de históricos");
+				return false;
+			}
+
 
 		} catch (Exception e) {
 			Traza_Log.registro(e.getMessage());

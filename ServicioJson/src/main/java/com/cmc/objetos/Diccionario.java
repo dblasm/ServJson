@@ -25,22 +25,27 @@ public class Diccionario {
 	public void generarDiccionario(List<TObjeto> rs) {
 
 		try {
+			if (rs!=null) {
 
-			Traza_Log.registro("  ##### Se va a proceder a generar el diccionario #####");
 
-			Map<String, List<TagDictionary>> dicc = new HashMap<String, List<TagDictionary>>();
-
-			// Recorremos los TObjeto para organizar por ip los idPlc y tagname
-
-			for (TObjeto item : rs) {
-				if (!dicc.containsKey(item.getIp())) {
-					dicc.put(item.getIp(), new ArrayList<TagDictionary>());
+				Traza_Log.registro("  ##### Se va a proceder a generar el diccionario #####");
+	
+				Map<String, List<TagDictionary>> dicc = new HashMap<String, List<TagDictionary>>();
+	
+				// Recorremos los TObjeto para organizar por ip los idPlc y tagname
+	
+				for (TObjeto item : rs) {
+					if (!dicc.containsKey(item.getIp())) {
+						dicc.put(item.getIp(), new ArrayList<TagDictionary>());
+					}
+					dicc.get(item.getIp()).add(new TagDictionary(item.getTagName(), item.getIdValor()));
 				}
-				dicc.get(item.getIp()).add(new TagDictionary(item.getTagName(), item.getIdValor()));
+	
+				Traza_Log.registro(" ##### Diccionario generado:" + dicc.toString() + " ######");
+				setDiccionario(dicc);
+			}else {
+				Traza_Log.registro(" No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario");	
 			}
-
-			Traza_Log.registro(" ##### Diccionario generado:" + dicc.toString() + " ######");
-			setDiccionario(dicc);
 
 		} catch (Exception e) {
 			Traza_Log.registro(e.getMessage());

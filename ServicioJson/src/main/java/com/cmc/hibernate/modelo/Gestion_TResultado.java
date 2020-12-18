@@ -1,5 +1,6 @@
 package com.cmc.hibernate.modelo;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,14 +43,18 @@ public class Gestion_TResultado implements IGestion_TObjeto {
 	@Transactional
 	public boolean cargarHistorico(ObjOrigen objeto,Diccionario diccionario) {
 		try  {
+			if (diccionario != null) {
+
 			
-			List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());			
-			List<TResultado> resultados = new ArrayList<TResultado>();
+				List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());			
+				List<TResultado> resultados = new ArrayList<TResultado>();
+				Timestamp fecha = Conversiones.toTimestamp(objeto.getFecha());
+
 			
 			for (Dato o : objeto.getDatos()) {
 				
 				TResultado resultado = new TResultado();
-				resultado.setFecha(Conversiones.toTimestamp(objeto.getFecha()));
+				resultado.setFecha(fecha);
 				resultado.setValor(Conversiones.toFloat(o.getValor()));
 				resultado.setTagName(tagNames.stream().filter(x -> o.getId().equals(x.getIdPlc())).map(TagDictionary::getTagname)
 						.findAny().orElse(""));
@@ -64,8 +69,15 @@ public class Gestion_TResultado implements IGestion_TObjeto {
 			
 			}
 			
-			// Save de los resultados
-			tResultado_dao.cargarResultados(resultados);
+				// Save de los resultados
+				tResultado_dao.cargarResultados(resultados);
+			
+			}else {
+				
+				Traza_Log.registro("Diccionario no generado, recibido un null",Traza_Log.LOG_ERROR);
+				return false;
+			}		
+			
 			
 			return true;
 		} catch (Exception e) {
