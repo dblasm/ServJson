@@ -4,9 +4,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.cmc.hibernate.dao.TResultadoDAO;
@@ -27,8 +25,7 @@ import com.cmc.util.Conversiones;
  *
  */
 
-// TODO: Asignar anotación correcta!!!!
-@Component("gestion_tObjeto")
+
 @Service
 public class Gestion_TResultado implements IGestion_TObjeto {
 
@@ -46,7 +43,7 @@ public class Gestion_TResultado implements IGestion_TObjeto {
 			if (diccionario != null) {
 
 			
-				List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());			
+				List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());	
 				List<TResultado> resultados = new ArrayList<TResultado>();
 				Timestamp fecha = Conversiones.toTimestamp(objeto.getFecha());
 
@@ -61,7 +58,7 @@ public class Gestion_TResultado implements IGestion_TObjeto {
 								
 				if (resultado.getFecha()== null || resultado.getValor() == null || resultado.getTagName() == ("")) {
 					
-				Traza_Log.registro("El objeto : " + resultado.toString() + "no se ha insertado en la base de datos",Traza_Log.LOG_ERROR);
+					Traza_Log.registro("sql.conversion.null",Traza_Log.LOG_ERROR, new String[]{resultado.toString()});
 				}
 				else {		
 					resultados.add(resultado);	

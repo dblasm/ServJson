@@ -11037,3 +11037,351 @@ Unconditional classes:
 2020-12-17 23:27:55.911 TRACE 14904 --- [RMI TCP Connection(7)-127.0.0.1] o.s.b.f.s.DisposableBeanAdapter          : Invoking destroy() on bean with name 'formContentFilter'
 2020-12-17 23:27:55.911 TRACE 14904 --- [RMI TCP Connection(7)-127.0.0.1] o.s.b.f.s.DisposableBeanAdapter          : Invoking destroy() on bean with name 'requestContextFilter'
 2020-12-17 23:27:55.912 TRACE 14904 --- [RMI TCP Connection(7)-127.0.0.1] o.s.b.f.s.DefaultListableBeanFactory     : Retrieved dependent beans for bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': [org.springframework.context.annotation.internalConfigurationAnnotationProcessor]
+2020-12-18 12:16:43.907  INFO 10472 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-18 12:16:44.030  INFO 10472 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 10472 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:16:44.037 DEBUG 10472 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:16:44.039  INFO 10472 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:16:45.115  INFO 10472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-18 12:16:45.260  INFO 10472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132ms. Found 2 JPA repository interfaces.
+2020-12-18 12:16:46.125  INFO 10472 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-18 12:16:46.144  INFO 10472 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:16:46.146  INFO 10472 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-18 12:16:46.147  INFO 10472 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 12:16:46.372  INFO 10472 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-18 12:16:46.372  INFO 10472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2255 ms
+2020-12-18 12:16:46.743  INFO 10472 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-18 12:16:46.828  INFO 10472 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-18 12:16:47.102  INFO 10472 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-18 12:16:47.256  INFO 10472 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:17:18.370 ERROR 10472 --- [main] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+
+com.microsoft.sqlserver.jdbc.SQLServerException: No se pudo realizar la conexión TCP/IP al host 175.26.1.253, puerto 1433. Error: "Connect timed out. Verifique las propiedades de conexión, compruebe que hay una instancia de SQL Server ejecutándose en el host y aceptando las conexiones TCP/IP en el puerto y compruebe que no hay ningún firewall bloqueando las conexiones TCP en el puerto.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:234) ~[mssql-jdbc-7.4.1.jre8.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:285) ~[mssql-jdbc-7.4.1.jre8.jar:?]
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2431) ~[mssql-jdbc-7.4.1.jre8.jar:?]
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:656) ~[mssql-jdbc-7.4.1.jre8.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:2472) ~[mssql-jdbc-7.4.1.jre8.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:2142) ~[mssql-jdbc-7.4.1.jre8.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1993) ~[mssql-jdbc-7.4.1.jre8.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1164) ~[mssql-jdbc-7.4.1.jre8.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:760) ~[mssql-jdbc-7.4.1.jre8.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) [spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) [spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) [spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) [spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at com.cmc.ServicioJsonApplication.main(ServicioJsonApplication.java:13) [classes/:?]
+
+2020-12-18 12:17:18.391  WARN 10472 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : No se pudo realizar la conexión TCP/IP al host 175.26.1.253, puerto 1433. Error: "Connect timed out. Verifique las propiedades de conexión, compruebe que hay una instancia de SQL Server ejecutándose en el host y aceptando las conexiones TCP/IP en el puerto y compruebe que no hay ningún firewall bloqueando las conexiones TCP en el puerto.".
+2020-12-18 12:17:18.406  INFO 10472 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-18 12:17:19.466  INFO 10472 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-18 12:17:19.481  INFO 10472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:17:20.046  WARN 10472 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-18 12:17:20.253  INFO 10472 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:17:20.892  INFO 10472 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:17:20.985  INFO 10472 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-18 12:17:20.991  INFO 10472 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 37.895 seconds (JVM running for 40.321)
+2020-12-18 12:17:22.559  INFO 10472 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 12:17:22.559  INFO 10472 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-18 12:17:22.568  INFO 10472 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 9 ms
+2020-12-18 12:17:22.710  INFO 10472 --- [http-nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:17:23.915  INFO 10472 --- [http-nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-18 12:17:24.813  INFO 10472 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-18 12:17:24.814  INFO 10472 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{x.x.x.x=[TagDictionary [tagname=nr1, idPlc=reactiva], TagDictionary [tagname=nr2, idPlc=activa], TagDictionary [tagname=nr3, idPlc=potencia]]} ######
+2020-12-18 12:17:24.865 ERROR 10472 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : No se ha podido cargar el resultado. El registro contiene un valor NULL:
+null
+2020-12-18 12:19:07.490  INFO 10472 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-18 12:19:07.495  INFO 10472 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:19:07.496  INFO 10472 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:19:07.500  INFO 10472 --- [RMI TCP Connection(5)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-18 12:19:07.505  INFO 10472 --- [RMI TCP Connection(5)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-18 12:19:21.253  INFO 7196 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-18 12:19:21.369  INFO 7196 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 7196 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:19:21.375 DEBUG 7196 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:19:21.377  INFO 7196 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:19:22.651  INFO 7196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-18 12:19:22.765  INFO 7196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103ms. Found 2 JPA repository interfaces.
+2020-12-18 12:19:23.873  INFO 7196 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-18 12:19:23.885  INFO 7196 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:19:23.887  INFO 7196 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-18 12:19:23.887  INFO 7196 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 12:19:24.073  INFO 7196 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-18 12:19:24.073  INFO 7196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2617 ms
+2020-12-18 12:19:24.461  INFO 7196 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-18 12:19:24.540  INFO 7196 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-18 12:19:24.710  INFO 7196 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-18 12:19:24.916  INFO 7196 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:19:26.329  INFO 7196 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-18 12:19:26.388  INFO 7196 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-18 12:19:46.548  INFO 7196 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-18 12:19:46.562  INFO 7196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:19:47.102  WARN 7196 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-18 12:19:47.256  INFO 7196 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:19:47.556  INFO 7196 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:19:47.610  INFO 7196 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-18 12:19:47.614  INFO 7196 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 27.183 seconds (JVM running for 29.41)
+2020-12-18 12:20:11.135  INFO 7196 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 12:20:11.136  INFO 7196 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-18 12:20:11.151  INFO 7196 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 15 ms
+2020-12-18 12:20:13.245  INFO 7196 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-18 12:20:13.246  INFO 7196 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  ##### Diccionario generado:{x.x.x.x=[TagDictionary [tagname=nr1, idPlc=reactiva], TagDictionary [tagname=nr2, idPlc=activa], TagDictionary [tagname=nr3, idPlc=potencia]]} ######
+2020-12-18 12:20:13.286 ERROR 7196 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : No se ha podido cargar el resultado. El registro contiene un valor NULL:
+TResultado [id=0, fecha=2020-12-11 11:23:12.0, valor=null, tagName=nr2]
+2020-12-18 12:22:33.003  INFO 7196 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-18 12:22:33.009  INFO 7196 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:22:33.011  INFO 7196 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:22:33.015  INFO 7196 --- [RMI TCP Connection(5)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-18 12:22:33.021  INFO 7196 --- [RMI TCP Connection(5)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-18 12:37:54.591  INFO 15352 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-18 12:37:54.672  INFO 15352 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 15352 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:37:54.679 DEBUG 15352 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:37:54.680  INFO 15352 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:37:55.876  INFO 15352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-18 12:37:55.997  INFO 15352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110ms. Found 2 JPA repository interfaces.
+2020-12-18 12:37:56.839  INFO 15352 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-18 12:37:56.853  INFO 15352 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:37:56.854  INFO 15352 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-18 12:37:56.855  INFO 15352 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 12:37:57.043  INFO 15352 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-18 12:37:57.044  INFO 15352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2308 ms
+2020-12-18 12:37:57.399  INFO 15352 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-18 12:37:57.471  INFO 15352 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-18 12:37:57.720  INFO 15352 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-18 12:37:57.895  INFO 15352 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:37:59.329  INFO 15352 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-18 12:37:59.366  INFO 15352 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-18 12:38:14.176  INFO 15352 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-18 12:38:14.186  INFO 15352 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:38:14.612  WARN 15352 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-18 12:38:14.806  INFO 15352 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:38:15.134  INFO 15352 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:38:15.177  INFO 15352 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-18 12:38:15.180  INFO 15352 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 21.3 seconds (JVM running for 23.249)
+2020-12-18 12:39:42.393  INFO 15352 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-18 12:39:42.397  INFO 15352 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:39:42.399  INFO 15352 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:39:42.403  INFO 15352 --- [RMI TCP Connection(5)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-18 12:39:42.409  INFO 15352 --- [RMI TCP Connection(5)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-18 12:42:12.299  INFO 2192 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-18 12:42:12.392  INFO 2192 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 2192 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:42:12.398 DEBUG 2192 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:42:12.400  INFO 2192 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:42:13.636  INFO 2192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-18 12:42:13.833  INFO 2192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179ms. Found 2 JPA repository interfaces.
+2020-12-18 12:42:14.754  INFO 2192 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-18 12:42:14.772  INFO 2192 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:42:14.773  INFO 2192 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-18 12:42:14.775  INFO 2192 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 12:42:14.966  INFO 2192 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-18 12:42:14.967  INFO 2192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2497 ms
+2020-12-18 12:42:15.338  INFO 2192 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-18 12:42:15.423  INFO 2192 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-18 12:42:15.636  INFO 2192 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-18 12:42:15.841  INFO 2192 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:42:17.371  INFO 2192 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-18 12:42:17.431  INFO 2192 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-18 12:42:34.462  INFO 2192 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-18 12:42:34.478  INFO 2192 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:42:34.948  WARN 2192 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-18 12:42:35.154  INFO 2192 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:42:35.454  INFO 2192 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:42:35.511  INFO 2192 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-18 12:42:35.514  INFO 2192 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 23.943 seconds (JVM running for 26.266)
+2020-12-18 12:43:38.348  INFO 2192 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-18 12:43:38.352  INFO 2192 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:43:38.354  INFO 2192 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:43:38.358  INFO 2192 --- [RMI TCP Connection(5)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-18 12:43:38.363  INFO 2192 --- [RMI TCP Connection(5)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-18 12:44:18.076  INFO 10284 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-18 12:44:18.184  INFO 10284 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 10284 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:44:18.192 DEBUG 10284 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:44:18.194  INFO 10284 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:44:19.324  INFO 10284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-18 12:44:19.441  INFO 10284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 2 JPA repository interfaces.
+2020-12-18 12:44:20.178  INFO 10284 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-18 12:44:20.198  INFO 10284 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:44:20.200  INFO 10284 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-18 12:44:20.201  INFO 10284 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 12:44:20.409  INFO 10284 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-18 12:44:20.410  INFO 10284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2132 ms
+2020-12-18 12:44:20.769  INFO 10284 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-18 12:44:20.828  INFO 10284 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-18 12:44:21.012  INFO 10284 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-18 12:44:21.144  INFO 10284 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:44:22.379  INFO 10284 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-18 12:44:22.442  INFO 10284 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-18 12:44:30.416  INFO 10284 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-18 12:44:30.429  INFO 10284 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:44:31.032  WARN 10284 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-18 12:44:31.366  INFO 10284 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:44:31.771  INFO 10284 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:44:31.874  INFO 10284 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-18 12:44:31.888  INFO 10284 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 14.635 seconds (JVM running for 17.192)
+2020-12-18 12:45:01.511  INFO 10284 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-18 12:45:01.516  INFO 10284 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:45:01.518  INFO 10284 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:45:01.521  INFO 10284 --- [RMI TCP Connection(4)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-18 12:45:01.527  INFO 10284 --- [RMI TCP Connection(4)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-18 12:45:36.016  INFO 13848 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-18 12:45:36.126  INFO 13848 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 13848 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:45:36.134 DEBUG 13848 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:45:36.135  INFO 13848 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:45:37.305  INFO 13848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-18 12:45:37.414  INFO 13848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99ms. Found 2 JPA repository interfaces.
+2020-12-18 12:45:38.216  INFO 13848 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-18 12:45:38.231  INFO 13848 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:45:38.231  INFO 13848 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-18 12:45:38.232  INFO 13848 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 12:45:38.455  INFO 13848 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-18 12:45:38.456  INFO 13848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2238 ms
+2020-12-18 12:45:38.911  INFO 13848 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-18 12:45:38.973  INFO 13848 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-18 12:45:39.180  INFO 13848 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-18 12:45:39.352  INFO 13848 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:48:22.834  INFO 17400 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-18 12:48:22.920  INFO 17400 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 17400 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:48:22.927 DEBUG 17400 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:48:22.930  INFO 17400 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:48:24.060  INFO 17400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-18 12:48:24.205  INFO 17400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131ms. Found 2 JPA repository interfaces.
+2020-12-18 12:48:25.009  INFO 17400 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-18 12:48:25.027  INFO 17400 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:48:25.029  INFO 17400 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-18 12:48:25.030  INFO 17400 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 12:48:25.253  INFO 17400 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-18 12:48:25.253  INFO 17400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2270 ms
+2020-12-18 12:48:25.581  INFO 17400 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-18 12:48:25.644  INFO 17400 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-18 12:48:25.815  INFO 17400 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-18 12:48:25.960  INFO 17400 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:48:27.253  INFO 17400 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-18 12:48:27.282  INFO 17400 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-18 12:48:54.190  INFO 17400 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-18 12:48:54.201  INFO 17400 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:48:54.657  WARN 17400 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-18 12:48:54.858  INFO 17400 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:48:55.186  INFO 17400 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:48:55.229  INFO 17400 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-18 12:48:55.232  INFO 17400 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 33.252 seconds (JVM running for 35.421)
+2020-12-18 12:49:01.948  INFO 17400 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 12:49:01.948  INFO 17400 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-18 12:49:01.957  INFO 17400 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 9 ms
+2020-12-18 12:49:03.223  INFO 17400 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-18 12:49:03.224  INFO 17400 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{x.x.x.x=[TagDictionary [tagname=nr1, idPlc=reactiva], TagDictionary [tagname=nr2, idPlc=activa], TagDictionary [tagname=nr3, idPlc=potencia]]} ######
+2020-12-18 12:49:03.256 ERROR 17400 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : No se ha podido cargar el resultado. El registro contiene un valor NULL:TResultado [id=0, fecha=2020-12-18 11:23:12.0, valor=null, tagName=nr2]
+2020-12-18 12:49:26.269  INFO 17400 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-18 12:49:26.273  INFO 17400 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:49:26.274  INFO 17400 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:49:26.277  INFO 17400 --- [RMI TCP Connection(3)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-18 12:49:26.283  INFO 17400 --- [RMI TCP Connection(3)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-18 12:50:46.503  INFO 8680 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-18 12:50:46.585  INFO 8680 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 8680 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:50:46.590 DEBUG 8680 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:50:46.592  INFO 8680 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:50:47.656  INFO 8680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-18 12:50:47.805  INFO 8680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 2 JPA repository interfaces.
+2020-12-18 12:50:48.554  INFO 8680 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-18 12:50:48.572  INFO 8680 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:50:48.574  INFO 8680 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-18 12:50:48.575  INFO 8680 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 12:50:48.770  INFO 8680 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-18 12:50:48.771  INFO 8680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2113 ms
+2020-12-18 12:50:49.096  INFO 8680 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-18 12:50:49.162  INFO 8680 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-18 12:50:49.312  INFO 8680 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-18 12:50:49.449  INFO 8680 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:50:50.590  INFO 8680 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-18 12:50:50.645  INFO 8680 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-18 12:50:58.161  INFO 8680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-18 12:50:58.174  INFO 8680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:50:58.614  WARN 8680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-18 12:50:58.855  INFO 8680 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:50:59.145  INFO 8680 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:50:59.202  INFO 8680 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-18 12:50:59.204  INFO 8680 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 13.468 seconds (JVM running for 15.456)
+2020-12-18 12:51:06.852  INFO 8680 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 12:51:06.853  INFO 8680 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-18 12:51:06.864  INFO 8680 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 11 ms
+2020-12-18 12:51:08.232  INFO 8680 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-18 12:51:08.234  INFO 8680 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{x.x.x.x=[TagDictionary [tagname=nr1, idPlc=reactiva], TagDictionary [tagname=nr2, idPlc=activa], TagDictionary [tagname=nr3, idPlc=potencia]]} ######
+2020-12-18 12:51:08.284  INFO 8680 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-18 12:51:39.925  INFO 8680 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-18 12:51:39.929  INFO 8680 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:51:39.931  INFO 8680 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:51:39.935  INFO 8680 --- [RMI TCP Connection(4)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-18 12:51:39.940  INFO 8680 --- [RMI TCP Connection(4)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-18 12:52:34.338  INFO 12752 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-18 12:52:34.440  INFO 12752 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 12752 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:52:34.448 DEBUG 12752 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:52:34.450  INFO 12752 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:52:35.465  INFO 12752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-18 12:52:35.580  INFO 12752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104ms. Found 2 JPA repository interfaces.
+2020-12-18 12:52:36.439  INFO 12752 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-18 12:52:36.457  INFO 12752 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:52:36.458  INFO 12752 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-18 12:52:36.460  INFO 12752 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 12:52:36.681  INFO 12752 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-18 12:52:36.681  INFO 12752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2156 ms
+2020-12-18 12:52:37.095  INFO 12752 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-18 12:52:37.156  INFO 12752 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-18 12:52:37.339  INFO 12752 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-18 12:52:37.498  INFO 12752 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-18 12:52:39.549  INFO 12752 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-18 12:52:39.599  INFO 12752 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-18 12:52:51.552  INFO 12752 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-18 12:52:51.564  INFO 12752 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:52:52.000  WARN 12752 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-18 12:52:52.228  INFO 12752 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:52:52.575  INFO 12752 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-18 12:52:52.631  INFO 12752 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-18 12:52:52.634  INFO 12752 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 18.978 seconds (JVM running for 21.368)
+2020-12-18 12:53:32.124  INFO 12752 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 12:53:32.124  INFO 12752 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-18 12:53:32.136  INFO 12752 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 12 ms
+2020-12-18 12:53:32.472  INFO 12752 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-18 12:53:32.756  INFO 12752 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-18 12:55:38.155  INFO 12752 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-18 12:55:38.159  INFO 12752 --- [RMI TCP Connection(6)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:55:38.161  INFO 12752 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-18 12:55:38.163  INFO 12752 --- [RMI TCP Connection(6)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-18 12:55:38.169  INFO 12752 --- [RMI TCP Connection(6)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

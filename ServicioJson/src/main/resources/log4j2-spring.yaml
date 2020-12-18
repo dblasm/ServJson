@@ -36,7 +36,7 @@ Configuration:
         AppenderRef:
           - ref: KeepgrowingAppFile
     Root:
-      level: All
+      level: Info
       AppenderRef:
         - ref: AllFile
         - ref: STDOUT

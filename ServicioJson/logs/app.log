@@ -13,3 +13,54 @@
 2020-12-17 23:24:34.900 DEBUG 14904 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
 2020-12-17 23:24:34.904  INFO 14904 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
 2020-12-17 23:24:55.464  INFO 14904 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 21.416 seconds (JVM running for 23.177)
+2020-12-18 12:16:44.030  INFO 10472 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 10472 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:16:44.037 DEBUG 10472 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:16:44.039  INFO 10472 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:17:20.991  INFO 10472 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 37.895 seconds (JVM running for 40.321)
+2020-12-18 12:17:24.813  INFO 10472 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-18 12:17:24.814  INFO 10472 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{x.x.x.x=[TagDictionary [tagname=nr1, idPlc=reactiva], TagDictionary [tagname=nr2, idPlc=activa], TagDictionary [tagname=nr3, idPlc=potencia]]} ######
+2020-12-18 12:17:24.865 ERROR 10472 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : No se ha podido cargar el resultado. El registro contiene un valor NULL:
+null
+2020-12-18 12:19:21.369  INFO 7196 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 7196 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:19:21.375 DEBUG 7196 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:19:21.377  INFO 7196 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:19:47.614  INFO 7196 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 27.183 seconds (JVM running for 29.41)
+2020-12-18 12:20:13.245  INFO 7196 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-18 12:20:13.246  INFO 7196 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  ##### Diccionario generado:{x.x.x.x=[TagDictionary [tagname=nr1, idPlc=reactiva], TagDictionary [tagname=nr2, idPlc=activa], TagDictionary [tagname=nr3, idPlc=potencia]]} ######
+2020-12-18 12:20:13.286 ERROR 7196 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : No se ha podido cargar el resultado. El registro contiene un valor NULL:
+TResultado [id=0, fecha=2020-12-11 11:23:12.0, valor=null, tagName=nr2]
+2020-12-18 12:37:54.672  INFO 15352 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 15352 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:37:54.679 DEBUG 15352 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:37:54.680  INFO 15352 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:38:15.180  INFO 15352 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 21.3 seconds (JVM running for 23.249)
+2020-12-18 12:42:12.392  INFO 2192 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 2192 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:42:12.398 DEBUG 2192 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:42:12.400  INFO 2192 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:42:35.514  INFO 2192 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 23.943 seconds (JVM running for 26.266)
+2020-12-18 12:44:18.184  INFO 10284 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 10284 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:44:18.192 DEBUG 10284 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:44:18.194  INFO 10284 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:44:31.888  INFO 10284 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 14.635 seconds (JVM running for 17.192)
+2020-12-18 12:45:36.126  INFO 13848 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 13848 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:45:36.134 DEBUG 13848 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:45:36.135  INFO 13848 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:48:22.920  INFO 17400 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 17400 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:48:22.927 DEBUG 17400 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:48:22.930  INFO 17400 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:48:55.232  INFO 17400 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 33.252 seconds (JVM running for 35.421)
+2020-12-18 12:49:03.223  INFO 17400 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-18 12:49:03.224  INFO 17400 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{x.x.x.x=[TagDictionary [tagname=nr1, idPlc=reactiva], TagDictionary [tagname=nr2, idPlc=activa], TagDictionary [tagname=nr3, idPlc=potencia]]} ######
+2020-12-18 12:49:03.256 ERROR 17400 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : No se ha podido cargar el resultado. El registro contiene un valor NULL:TResultado [id=0, fecha=2020-12-18 11:23:12.0, valor=null, tagName=nr2]
+2020-12-18 12:50:46.585  INFO 8680 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 8680 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:50:46.590 DEBUG 8680 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:50:46.592  INFO 8680 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:50:59.204  INFO 8680 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 13.468 seconds (JVM running for 15.456)
+2020-12-18 12:51:08.232  INFO 8680 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-18 12:51:08.234  INFO 8680 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{x.x.x.x=[TagDictionary [tagname=nr1, idPlc=reactiva], TagDictionary [tagname=nr2, idPlc=activa], TagDictionary [tagname=nr3, idPlc=potencia]]} ######
+2020-12-18 12:51:08.284  INFO 8680 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-18 12:52:34.440  INFO 12752 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 12752 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-18 12:52:34.448 DEBUG 12752 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 12:52:34.450  INFO 12752 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 12:52:52.634  INFO 12752 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 18.978 seconds (JVM running for 21.368)
+2020-12-18 12:53:32.472  INFO 12752 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-18 12:53:32.756  INFO 12752 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null

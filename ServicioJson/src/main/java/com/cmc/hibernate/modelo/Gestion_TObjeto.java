@@ -2,7 +2,6 @@ package com.cmc.hibernate.modelo;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import com.cmc.hibernate.dao.TObjetoDAO;
 import com.cmc.objetos.Diccionario;
@@ -17,8 +16,7 @@ import com.cmc.objetos.Diccionario;
  *
  */
 
-// TODO: Asignar anotación correcta!!!!
-@Component("gestion_tObjetoRepositorio")
+
 @Service
 public class Gestion_TObjeto implements IGestion_TResultado {
 

@@ -8,24 +8,16 @@ import org.apache.logging.log4j.Logger;
 
 public class Traza_Log implements ITraza_Log{
 	
-	/**
-	 * Registro de la clasa en el sistema log4j.
-	 */
-	private static final Logger log= LogManager.getLogger(Traza_Log.class);
 	
-	/**
-	 * Objeto que relaciona los mensajes personalizados para las trazas log4j.
-	 */
+	private static final Logger log= LogManager.getLogger(Traza_Log.class);
 	private static ResourceBundle rb;
 
-	/**
-	 * Sobrecarga método para indicar nivel INFO por defecto
-	 * @param mensaje
-	 * 			Texto a registrar
-	 */
+	
 	public static void registro(String mensaje) {
 		registro(mensaje, LOG_INFO);
 	}
+	
+	
 	
 	/**
 	 * Sobrecarga añadiendo uso de cadenas y variables en tiempo de ejecución
@@ -45,13 +37,7 @@ public class Traza_Log implements ITraza_Log{
 		registro(mensa, nivel);
 	}
 	
-	/**
-	 * Sobrecarga del método {@link #registro(String, int, String[])} Por defecto nivel INFO.
-	 * @param mensaje
-	 * 			Texto del mensaje a tratar.
-	 * @param valores
-	 * 			Valores para las variables en los mensajes.
-	 */
+	
 	public static void registro (String mensaje, String valores[]) {
 		if (rb == null) {
 			rb = ResourceBundle.getBundle("com.cmc.log4j.textos_trazas");
@@ -62,13 +48,7 @@ public class Traza_Log implements ITraza_Log{
 	}
 	
 	
-	/**
-	 * Proceso de escritura mediante el sistema log4j.
-	 * @param mensaje
-	 * 			Texto del mensaje a tratar.
-	 * @param nivel
-	 * 			Prioridad dentro del sistema log4j.
-	 */			
+			
 	public static void registro (String mensaje, int nivel) {
 		if (nivel== LOG_TRACE) {
 			if (log.isTraceEnabled()) {
