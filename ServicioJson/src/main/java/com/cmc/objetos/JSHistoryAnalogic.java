@@ -4,7 +4,7 @@ package com.cmc.objetos;
 import java.util.Set;
 
 
-public class ObjOrigen {
+public class JSHistoryAnalogic {
 
 	
 	private String ip;
@@ -12,10 +12,10 @@ public class ObjOrigen {
 	private Set<Dato> datos;
 
 	// Constructores
-	public ObjOrigen() {
+	public JSHistoryAnalogic() {
 	}
 
-	public ObjOrigen(String ip, String fecha, Set<Dato> datos) {
+	public JSHistoryAnalogic(String ip, String fecha, Set<Dato> datos) {
 		this.ip = ip;
 		this.fecha = fecha;
 		this.datos = datos;

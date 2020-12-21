@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cmc.objetos.Diccionario;
-import com.cmc.objetos.ObjOrigen;
-import com.cmc.hibernate.modelo.Gestion_TResultado;
+import com.cmc.objetos.JSHistoryAnalogic;
+import com.cmc.hibernate.modelo.Gestion_THistoryAnalogic;
 import com.cmc.hibernate.modelo.Gestion_TObjeto;
 
 
@@ -26,22 +26,22 @@ public class Controlador {
 //Inyección beans
 	
 	@Autowired
-	private Gestion_TResultado gestion_tObjeto;
+	private Gestion_THistoryAnalogic gestion_tHistoryAnalogic;
 	@Autowired
-	private Gestion_TObjeto gestion_tObjetoRepositorio;
+	private Gestion_TObjeto gestion_tObjeto;
 	
 
 //Consulta Json
 
-	@GetMapping("/datosHistoricos/")
-    public ResponseEntity<Boolean> datosHistoricos(@Valid @RequestBody ObjOrigen objeto) {
+	@GetMapping("/historyAnalogic/")
+    public ResponseEntity<Boolean> datosHistoricos(@Valid @RequestBody JSHistoryAnalogic JSHistoryAnalogic) {
 		
 		if (diccionario == null) {
-			diccionario = gestion_tObjetoRepositorio.crearDiccionario();
+			diccionario = gestion_tObjeto.crearDiccionario();
 			
 		}			
 			
-        return ResponseEntity.ok().body(gestion_tObjeto.cargarHistorico(objeto,diccionario));
+        return ResponseEntity.ok().body(gestion_tHistoryAnalogic.cargarHistorico(JSHistoryAnalogic,diccionario));
     }
 	
 	

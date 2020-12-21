@@ -9,8 +9,8 @@ import java.sql.Timestamp;
 
 
 @Entity
-@Table(name = "secundaria")
-public class TResultado {
+@Table(name = "historyanalogic")
+public class THistoryAnalogic {
 	
 	@Id
 	@Column(name = "id")
@@ -26,10 +26,10 @@ public class TResultado {
 
 	
 	// Constructores
-	public TResultado() {
+	public THistoryAnalogic() {
 	}
 	
-	public TResultado(long id, Timestamp fecha, Float valor, String tagName) {
+	public THistoryAnalogic(long id, Timestamp fecha, Float valor, String tagName) {
 		super();
 		this.id = id;
 		this.fecha = fecha;

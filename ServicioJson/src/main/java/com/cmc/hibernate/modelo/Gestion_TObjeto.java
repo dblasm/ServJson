@@ -18,7 +18,7 @@ import com.cmc.objetos.Diccionario;
 
 
 @Service
-public class Gestion_TObjeto implements IGestion_TResultado {
+public class Gestion_TObjeto implements IGestion_TObjeto {
 
 
 	@Autowired

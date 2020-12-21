@@ -11,7 +11,7 @@ import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
 import com.cmc.persistencia.TObjeto;
-import com.cmc.persistencia.TResultado;
+import com.cmc.persistencia.THistoryAnalogic;
 
 public class HibernateUtil {
 	
@@ -34,7 +34,7 @@ public class HibernateUtil {
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
 				
 				//Se añaden las clases que contienen las anotaciones a mapear
-				configuration.addAnnotatedClass(TResultado.class);
+				configuration.addAnnotatedClass(THistoryAnalogic.class);
 				configuration.addAnnotatedClass(TObjeto.class);
 				configuration.setProperties(settings);
 				

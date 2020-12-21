@@ -4,24 +4,24 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import com.cmc.hibernate.repositorio.TResultadoRepositorio;
+import com.cmc.hibernate.repositorio.THistoryAnalogicRepositorio;
 import com.cmc.log4j.Traza_Log;
-import com.cmc.persistencia.TResultado;
+import com.cmc.persistencia.THistoryAnalogic;
 
 @Repository
-public class TResultadoDAO {
+public class THistoryAnalogicDAO {
 	
 	@Autowired
-	private TResultadoRepositorio tResultado_repo;
+	private THistoryAnalogicRepositorio tHistoryAnalogic_repo;
 
 	//Métodos CRUD Hibernate
 	
 	@Transactional
-	public boolean cargarResultados(List<TResultado> resultados) {
+	public boolean cargarResultados(List<THistoryAnalogic> resultados) {
 		try  {
 			
 			if (resultados != null) {			
-				tResultado_repo.saveAll(resultados);
+				tHistoryAnalogic_repo.saveAll(resultados);
 				return true;
 			}else {
 				
