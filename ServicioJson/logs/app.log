@@ -72,3 +72,36 @@ TResultado [id=0, fecha=2020-12-11 11:23:12.0, valor=null, tagName=nr2]
 2020-12-18 15:43:53.486 DEBUG 192 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
 2020-12-18 15:43:53.501  INFO 192 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
 2020-12-18 15:44:45.285  INFO 192 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 57.003 seconds (JVM running for 65.893)
+2020-12-21 19:35:46.710  INFO 8900 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 8900 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 19:35:46.749 DEBUG 8900 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 19:35:46.760  INFO 8900 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 19:40:06.396  INFO 9680 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 9680 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 19:40:06.445 DEBUG 9680 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 19:40:06.456  INFO 9680 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 19:41:59.498  INFO 8864 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 8864 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 19:41:59.535 DEBUG 8864 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 19:41:59.543  INFO 8864 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 19:49:17.701  INFO 8040 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 8040 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 19:49:17.746 DEBUG 8040 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 19:49:17.758  INFO 8040 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 19:51:38.430  INFO 9212 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 9212 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 19:51:38.508 DEBUG 9212 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 19:51:38.526  INFO 9212 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 19:54:01.025  INFO 1336 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 1336 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 19:54:01.061 DEBUG 1336 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 19:54:01.071  INFO 1336 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 19:55:59.343  INFO 7800 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 7800 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 19:55:59.376 DEBUG 7800 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 19:55:59.387  INFO 7800 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 19:59:58.840  INFO 9012 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 9012 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 19:59:58.927 DEBUG 9012 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 19:59:58.940  INFO 9012 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 20:09:53.892  INFO 7956 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 7956 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 20:09:53.935 DEBUG 7956 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 20:09:53.944  INFO 7956 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 20:11:12.779  INFO 5208 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 5208 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 20:11:12.811 DEBUG 5208 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 20:11:12.821  INFO 5208 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 20:18:29.412  INFO 8736 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 8736 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-21 20:18:29.461 DEBUG 8736 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 20:18:29.471  INFO 8736 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default

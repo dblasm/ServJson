@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import com.cmc.persistencia.THistoryAnalogic;
 
 @Repository
-public interface THistoryAnalogicRepositorio extends JpaRepository <THistoryAnalogic, String>{
+public interface IHistoryAnalogic extends JpaRepository <THistoryAnalogic, String>{
 	
 }

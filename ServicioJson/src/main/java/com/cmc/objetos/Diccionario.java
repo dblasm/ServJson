@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.cmc.log4j.Traza_Log;
-import com.cmc.persistencia.TDato;
+import com.cmc.persistencia.VEquiposAtributos;
+import com.cmc.persistencia.TEquipo;
 
 public class Diccionario {
 
@@ -20,7 +21,7 @@ public class Diccionario {
 		return diccionario;
 	}
 
-	public void generarDiccionario(List<TDato> rs) {
+	public void generarDiccionario(List<VEquiposAtributos> rs) {
 
 		try {
 			if (rs!=null) {
@@ -34,7 +35,7 @@ public class Diccionario {
 	
 				// Recorremos los TObjeto para organizar por ip los idPlc y tagname
 	
-				/*for (TDato item : rs) {
+				/*for (EquiposAtributos item : rs) {
 					if (!dicc.containsKey(item.getIp())) {
 						dicc.put(item.getIp(), new ArrayList<TagDictionary>());
 					}

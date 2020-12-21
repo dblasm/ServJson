@@ -10,9 +10,9 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
-import com.cmc.persistencia.TDato;
+import com.cmc.persistencia.TEquipo;
 import com.cmc.persistencia.THistoryAnalogic;
-import com.cmc.persistencia.TTipo;
+import com.cmc.persistencia.TAtributos;
 
 public class HibernateUtil {
 	
@@ -36,8 +36,8 @@ public class HibernateUtil {
 				
 				//Se añaden las clases que contienen las anotaciones a mapear
 				configuration.addAnnotatedClass(THistoryAnalogic.class);
-				configuration.addAnnotatedClass(TDato.class);
-				configuration.addAnnotatedClass(TTipo.class);
+				configuration.addAnnotatedClass(TEquipo.class);
+				configuration.addAnnotatedClass(TAtributos.class);				
 				configuration.setProperties(settings);
 				
 				

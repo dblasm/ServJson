@@ -31,7 +31,7 @@ public class Controlador {
 	private Gestion_TObjeto gestion_tObjeto;
 	
 
-//Consulta Json
+//Consulta Json para datos Analógicos
 
 	@GetMapping("/historyAnalogic/")
     public ResponseEntity<Boolean> datosHistoricos(@Valid @RequestBody JSHistoryAnalogic JSHistoryAnalogic) {
@@ -44,8 +44,19 @@ public class Controlador {
         return ResponseEntity.ok().body(gestion_tHistoryAnalogic.cargarHistorico(JSHistoryAnalogic,diccionario));
     }
 	
-	
-	
-	
+
+	//Consulta Json para datos Digitales
+	/*
+	@GetMapping("/historyDigital/")
+    public ResponseEntity<Boolean> datosHistoricos(@Valid @RequestBody JSHistoryDigital JSHistoryDigital) {
+		
+		if (diccionario == null) {
+			diccionario = gestion_tObjeto.crearDiccionario();
+			
+		}			
+			
+        return ResponseEntity.ok().body(gestion_tHistoryDigital.cargarHistorico(JSHistoryDigital,diccionario));
+    }
+	*/
 	
 }

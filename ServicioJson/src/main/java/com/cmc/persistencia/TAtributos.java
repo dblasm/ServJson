@@ -1,27 +1,24 @@
 package com.cmc.persistencia;
 
-import java.util.Set;
 
-import javax.persistence.CascadeType;
+import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
+
 
 @Entity
-@Table(name = "tipos")
-public class TTipo {
+@Table(name = "atributos")
+public class TAtributos {
 	
-	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id_tipo", nullable = false)
-	private String id_tipo; 
-	@Column(name = "id_plc", nullable = false)
-	private String idPlc; 
+	@Id    
+	@Column(name = "id", nullable = false)
+	private String id; 
+	@Column(name = "attrname", nullable = false)
+	private String attrname; 	
 	@Column(name = "escalado", nullable = false)
 	private float escalado;
 	@Column(name = "es_escalado", nullable = false)
@@ -31,43 +28,44 @@ public class TTipo {
 	@Column(name = "tiempo_agregado", nullable = false)
 	private int tiempoAgregado;
 	
-	private Set<TDato> datos;
+	@OneToMany(targetEntity = TEquipo.class, mappedBy = "tagname", orphanRemoval = false, fetch = FetchType.LAZY)
+	private Set<TEquipo> equipos;
 	
 	
-	public TTipo() {
+	public TAtributos() {
 		
 	}
 
 
-	public TTipo(String id_tipo, String idPlc, float escalado, boolean esEscalado, boolean agregado, int tiempoAgregado,
-			Set<TDato> datos) {
-		this.id_tipo = id_tipo;
-		this.idPlc = idPlc;
+	public TAtributos(String id_tipo, String idPlc, float escalado, boolean esEscalado, boolean agregado, int tiempoAgregado,
+			Set<TEquipo> equipos) {
+		this.id = id_tipo;
+		this.attrname = idPlc;
 		this.escalado = escalado;
 		this.esEscalado = esEscalado;
 		this.agregado = agregado;
 		this.tiempoAgregado = tiempoAgregado;
-		this.datos = datos;
+		this.equipos = equipos;
 	}
 
 
 	public String getId_tipo() {
-		return id_tipo;
+		return id;
 	}
 
 
 	public void setId_tipo(String id_tipo) {
-		this.id_tipo = id_tipo;
+		this.id = id_tipo;
 	}
 
 
 	public String getIdPlc() {
-		return idPlc;
+		return attrname;
 	}
 
 
 	public void setIdPlc(String idPlc) {
-		this.idPlc = idPlc;
+		this.attrname = idPlc;
 	}
 
 
@@ -110,22 +108,21 @@ public class TTipo {
 		this.tiempoAgregado = tiempoAgregado;
 	}
 
-	@Transient
-	@ManyToOne(cascade = CascadeType.ALL)
-	public Set<TDato> getDatos() {
-		return datos;
+	
+	public Set<TEquipo> getEquipos() {
+		return equipos;
 	}
 
 
-	public void setDatos(Set<TDato> datos) {
-		this.datos = datos;
+	public void setEquipos(Set<TEquipo> equipos) {
+		this.equipos = equipos;
 	}
 
 
 	@Override
 	public String toString() {
-		return "TTipo [id_tipo=" + id_tipo + ", idPlc=" + idPlc + ", escalado=" + escalado + ", esEscalado="
-				+ esEscalado + ", agregado=" + agregado + ", tiempoAgregado=" + tiempoAgregado + ", datos=" + datos
+		return "TTipo [id_tipo=" + id + ", idPlc=" + attrname + ", escalado=" + escalado + ", esEscalado="
+				+ esEscalado + ", agregado=" + agregado + ", tiempoAgregado=" + tiempoAgregado + ", equipos=" + equipos
 				+ "]";
 	}
 

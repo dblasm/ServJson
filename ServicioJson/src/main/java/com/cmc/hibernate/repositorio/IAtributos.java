@@ -1,13 +1,18 @@
 package com.cmc.hibernate.repositorio;
 
 
+
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.cmc.persistencia.TDato;
-import com.cmc.persistencia.TTipo;
+import com.cmc.persistencia.TEquipo;
+import com.cmc.persistencia.TAtributos;
+
 
 @Repository
-public interface TDiccionarioRepositorio extends JpaRepository <TDato, TTipo>{
+public interface IAtributos extends JpaRepository <TAtributos, Integer>{
+
+			
 	
 }
