@@ -7,13 +7,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.cmc.hibernate.dao.TResultadoDAO;
+import com.cmc.hibernate.dao.THistoryAnalogicDAO;
 import com.cmc.log4j.Traza_Log;
 import com.cmc.objetos.Dato;
 import com.cmc.objetos.Diccionario;
-import com.cmc.objetos.ObjOrigen;
+import com.cmc.objetos.JSHistoryAnalogic;
 import com.cmc.objetos.TagDictionary;
-import com.cmc.persistencia.TResultado;
+import com.cmc.persistencia.THistoryAnalogic;
 import com.cmc.util.Conversiones;
 
 /**
@@ -27,30 +27,30 @@ import com.cmc.util.Conversiones;
 
 
 @Service
-public class Gestion_TResultado implements IGestion_TObjeto {
+public class Gestion_THistoryAnalogic implements IGestion_THistoryAnalogic {
 
 
 	@Autowired
-	private TResultadoDAO tResultado_dao;
+	private THistoryAnalogicDAO tResultado_dao;
 	
 
 	//Métodos propios
 	
 	@Override
 	@Transactional
-	public boolean cargarHistorico(ObjOrigen objeto,Diccionario diccionario) {
+	public boolean cargarHistorico(JSHistoryAnalogic objeto,Diccionario diccionario) {
 		try  {
 			if (diccionario != null) {
 
 			
 				List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());	
-				List<TResultado> resultados = new ArrayList<TResultado>();
+				List<THistoryAnalogic> resultados = new ArrayList<THistoryAnalogic>();
 				Timestamp fecha = Conversiones.toTimestamp(objeto.getFecha());
 
 			
 			for (Dato o : objeto.getDatos()) {
 				
-				TResultado resultado = new TResultado();
+				THistoryAnalogic resultado = new THistoryAnalogic();
 				resultado.setFecha(fecha);
 				resultado.setValor(Conversiones.toFloat(o.getValor()));
 				resultado.setTagName(tagNames.stream().filter(x -> o.getId().equals(x.getIdPlc())).map(TagDictionary::getTagname)

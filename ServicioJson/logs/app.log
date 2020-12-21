@@ -68,3 +68,7 @@ TResultado [id=0, fecha=2020-12-11 11:23:12.0, valor=null, tagName=nr2]
 2020-12-18 15:28:14.344 DEBUG 11384 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
 2020-12-18 15:28:14.346  INFO 11384 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
 2020-12-18 15:28:51.048  INFO 11384 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 37.489 seconds (JVM running for 39.196)
+2020-12-18 15:43:53.456  INFO 192 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 192 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-18 15:43:53.486 DEBUG 192 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-18 15:43:53.501  INFO 192 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-18 15:44:45.285  INFO 192 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 57.003 seconds (JVM running for 65.893)
