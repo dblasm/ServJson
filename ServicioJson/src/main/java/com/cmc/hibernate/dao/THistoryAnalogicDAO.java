@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import com.cmc.hibernate.repositorio.IHistoryAnalogic;
 import com.cmc.log4j.Traza_Log;
-import com.cmc.persistencia.THistoryAnalogic;
+import com.cmc.persistencia.HistoryAnalogic;
 
 @Repository
 public class THistoryAnalogicDAO {
@@ -17,7 +17,7 @@ public class THistoryAnalogicDAO {
 	//Métodos CRUD Hibernate
 	
 	@Transactional
-	public boolean cargarResultados(List<THistoryAnalogic> resultados) {
+	public boolean cargarResultados(List<HistoryAnalogic> resultados) {
 		try  {
 			
 			if (resultados != null) {			

@@ -3,7 +3,7 @@ package com.cmc.hibernate.modelo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.cmc.hibernate.dao.TObjetoDAO;
+import com.cmc.hibernate.dao.EquiposDAO;
 import com.cmc.objetos.Diccionario;
 
 
@@ -18,18 +18,18 @@ import com.cmc.objetos.Diccionario;
 
 
 @Service
-public class Gestion_TObjeto implements IGestion_TObjeto {
+public class Gestion_Equipos implements IGestion_Equipos {
 
 
 	@Autowired
-	private TObjetoDAO tObjetoDAO;
+	private EquiposDAO equiposDAO;
 	
 	
 	// Crea el diccionario
 	public  Diccionario crearDiccionario(){
 		
 		Diccionario diccionario = new Diccionario();
-		diccionario.generarDiccionario(tObjetoDAO.buscarTodo());
+		diccionario.generarDiccionario(equiposDAO.consultaEquiposAtributos());
 		
 		return diccionario;
 		

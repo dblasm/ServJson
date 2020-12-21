@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.cmc.log4j.Traza_Log;
-import com.cmc.persistencia.VEquiposAtributos;
-import com.cmc.persistencia.TEquipo;
+import com.cmc.persistencia.EquiposAtributos;
+import com.cmc.persistencia.Equipo;
 
 public class Diccionario {
 
@@ -21,10 +21,10 @@ public class Diccionario {
 		return diccionario;
 	}
 
-	public void generarDiccionario(List<VEquiposAtributos> rs) {
+	public void generarDiccionario(List<Equipo> rs) {
 
 		try {
-			if (rs!=null) {
+			if (rs !=null) {
 
 
 				Traza_Log.registro("  ##### Se va a proceder a generar el diccionario #####");

@@ -10,9 +10,10 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
-import com.cmc.persistencia.TEquipo;
-import com.cmc.persistencia.THistoryAnalogic;
-import com.cmc.persistencia.TAtributos;
+import com.cmc.persistencia.Equipo;
+import com.cmc.persistencia.HistoryAnalogic;
+import com.cmc.persistencia.EquiposAtributos;
+import com.cmc.persistencia.Atributo;
 
 public class HibernateUtil {
 	
@@ -35,9 +36,10 @@ public class HibernateUtil {
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
 				
 				//Se añaden las clases que contienen las anotaciones a mapear
-				configuration.addAnnotatedClass(THistoryAnalogic.class);
-				configuration.addAnnotatedClass(TEquipo.class);
-				configuration.addAnnotatedClass(TAtributos.class);				
+				configuration.addAnnotatedClass(HistoryAnalogic.class);
+				configuration.addAnnotatedClass(Equipo.class);
+				configuration.addAnnotatedClass(Atributo.class);
+				configuration.addAnnotatedClass(EquiposAtributos.class);
 				configuration.setProperties(settings);
 				
 				

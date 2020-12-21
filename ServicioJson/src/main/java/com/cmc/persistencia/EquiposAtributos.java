@@ -1,29 +1,42 @@
 package com.cmc.persistencia;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-
-public class VEquiposAtributos {	
+@Entity
+@Table(name="equipos_atributos")
+public class EquiposAtributos {	
 	//Equipos
 	private String ip;
+	@Column (name = "tagname")
 	private String tagname; 	
 	
 	//Comun
+	@Id
+	@Column (name = "id_tipo")
 	private String id_tipo;
 	
-	//Atributos			
-	private String idPlc; 	
-	private float escalado;	
+	//Atributos		
+	@Column (name = "id_plc")
+	private String idPlc;
+	@Column (name = "escalado")
+	private float escalado;
+	@Column (name = "es_escalado")
 	private boolean esEscalado;	
-	private boolean agregado; 	
+	@Column (name = "agregado")
+	private boolean agregado; 
+	@Column (name = "tiempo_agregado")
 	private int tiempoAgregado;
 	
 	
 	
 	
-	public VEquiposAtributos() {
+	public EquiposAtributos() {
 
 	}
-	public VEquiposAtributos(String ip, String tagname, String id_tipo, String idPlc, float escalado, boolean esEscalado,
+	public EquiposAtributos(String ip, String tagname, String id_tipo, String idPlc, float escalado, boolean esEscalado,
 			boolean agregado, int tiempoAgregado) {
 		super();
 		this.ip = ip;

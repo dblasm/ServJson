@@ -6,17 +6,22 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 
 @Entity
-@Table(name = "atributos")
-public class TAtributos {
+@Table(name = "atributo")
+public class Atributo {
 	
 	@Id    
 	@Column(name = "id", nullable = false)
-	private String id; 
+	private int id; 
+	@Column(name = "tipo", nullable = false)
+	private String tipo; 
 	@Column(name = "attrname", nullable = false)
 	private String attrname; 	
 	@Column(name = "escalado", nullable = false)
@@ -28,44 +33,61 @@ public class TAtributos {
 	@Column(name = "tiempo_agregado", nullable = false)
 	private int tiempoAgregado;
 	
-	@OneToMany(targetEntity = TEquipo.class, mappedBy = "tagname", orphanRemoval = false, fetch = FetchType.LAZY)
-	private Set<TEquipo> equipos;
+	@Transient
+	@ManyToOne
+	private Equipo equipo;
 	
 	
-	public TAtributos() {
+	public Atributo() {
 		
 	}
 
 
-	public TAtributos(String id_tipo, String idPlc, float escalado, boolean esEscalado, boolean agregado, int tiempoAgregado,
-			Set<TEquipo> equipos) {
-		this.id = id_tipo;
-		this.attrname = idPlc;
+
+
+
+
+	public Atributo(int id, String tipo, String attrname, float escalado, boolean esEscalado, boolean agregado,
+			int tiempoAgregado) {
+		this.id = id;
+		this.tipo = tipo;
+		this.attrname = attrname;
 		this.escalado = escalado;
 		this.esEscalado = esEscalado;
 		this.agregado = agregado;
 		this.tiempoAgregado = tiempoAgregado;
-		this.equipos = equipos;
 	}
 
 
-	public String getId_tipo() {
+
+
+
+
+	public int getId() {
 		return id;
 	}
 
+	public void setId(int id) {
+		this.id = id;
+	}
 
-	public void setId_tipo(String id_tipo) {
-		this.id = id_tipo;
+	public String getTipo() {
+		return tipo;
 	}
 
 
-	public String getIdPlc() {
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+
+	public String getAttrname() {
 		return attrname;
 	}
 
 
-	public void setIdPlc(String idPlc) {
-		this.attrname = idPlc;
+	public void setAttrname(String attrname) {
+		this.attrname = attrname;
 	}
 
 
@@ -108,24 +130,26 @@ public class TAtributos {
 		this.tiempoAgregado = tiempoAgregado;
 	}
 
+		
+/*
+	public Equipo getEquipo() {
+		return equipo;
+	}
+
+
+	public void setEquipo(Equipo equipo) {
+		this.equipo = equipo;
+	}
+*/
+
+
+
 	
-	public Set<TEquipo> getEquipos() {
-		return equipos;
-	}
 
 
-	public void setEquipos(Set<TEquipo> equipos) {
-		this.equipos = equipos;
-	}
 
 
-	@Override
-	public String toString() {
-		return "TTipo [id_tipo=" + id + ", idPlc=" + attrname + ", escalado=" + escalado + ", esEscalado="
-				+ esEscalado + ", agregado=" + agregado + ", tiempoAgregado=" + tiempoAgregado + ", equipos=" + equipos
-				+ "]";
-	}
-
+	
 
 	
 

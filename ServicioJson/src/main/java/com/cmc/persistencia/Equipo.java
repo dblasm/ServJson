@@ -2,21 +2,22 @@ package com.cmc.persistencia;
 
 
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.OneToMany;
 
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
 
 
 @Entity
-@Table(name = "equipos")
-public class TEquipo {
+@Table(name = "equipo")
+public class Equipo {
 	
 	@Column(name = "ip", nullable = false)
 	private String ip;
@@ -28,27 +29,30 @@ public class TEquipo {
 	@Column (name = "descripcion", nullable = false)
 	private String descripcion;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_tipo", insertable = false, updatable = false)
-	@Fetch(value = FetchMode.JOIN)
-	private TAtributos atributos;
+	@Transient
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "equipo")
+	private Set<Atributo> atributos;
    
 	
 	//Constructores
-		public TEquipo() {
+		public Equipo() {
 			
 		}
 		
 
-		public TEquipo(String ip, String tagname, String id_tipo, TAtributos atributos,String descripcion) {
-		super();
+
+
+
+		public Equipo(String ip, String tagname, String id_tipo, String descripcion, Set<Atributo> atributos) {
 		this.ip = ip;
 		this.tagname = tagname;
 		this.id_tipo = id_tipo;
-		this.atributos = atributos;
 		this.descripcion = descripcion;
-		
+		this.atributos = atributos;
 	}
+
+
+
 
 
 		//Accesores
@@ -82,15 +86,20 @@ public class TEquipo {
 		}
 
 
-		public TAtributos getAtributos() {
+		public Set<Atributo> getAtributos() {
 			return atributos;
 		}
 
 
 
-		public void setAtributos(TAtributos atributos) {
+
+
+		public void setAtributos(Set<Atributo> atributos) {
 			this.atributos = atributos;
-		}	
+		}
+
+
+
 
 
 		public String getDescripcion() {
@@ -103,11 +112,9 @@ public class TEquipo {
 		}
 
 
-		@Override
-		public String toString() {
-			return "TEquipo [ip=" + ip + ", tagname=" + tagname + ", id_tipo=" + id_tipo + ", atributos=" + atributos
-					+ "]";
-		}
+
+
+
 		
 		
 	

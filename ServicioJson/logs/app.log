@@ -105,3 +105,233 @@ TResultado [id=0, fecha=2020-12-11 11:23:12.0, valor=null, tagName=nr2]
 2020-12-21 20:18:29.412  INFO 8736 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 8736 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
 2020-12-21 20:18:29.461 DEBUG 8736 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
 2020-12-21 20:18:29.471  INFO 8736 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 21:38:06.475  INFO 20096 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 20096 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 21:38:06.482 DEBUG 20096 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 21:38:06.483  INFO 20096 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 21:48:27.429  INFO 9408 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 9408 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 21:48:27.435 DEBUG 9408 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 21:48:27.437  INFO 9408 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 21:48:32.706  INFO 9408 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 5.827 seconds (JVM running for 7.401)
+2020-12-21 22:39:58.033  INFO 1072 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 1072 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 22:39:58.038 DEBUG 1072 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 22:39:58.040  INFO 1072 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 22:40:27.669  INFO 9312 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 9312 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 22:40:27.674 DEBUG 9312 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 22:40:27.675  INFO 9312 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 22:40:32.271  INFO 9312 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 5.227 seconds (JVM running for 6.54)
+2020-12-21 22:41:32.091  INFO 9312 --- [http-nio-8080-exec-3] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-21 22:41:32.093  INFO 9312 --- [http-nio-8080-exec-3] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-21 22:41:32.125  INFO 9312 --- [http-nio-8080-exec-3] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-21 22:42:38.298  INFO 15020 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 15020 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 22:42:38.305 DEBUG 15020 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 22:42:38.307  INFO 15020 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 22:42:43.722  INFO 15020 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.191 seconds (JVM running for 9.627)
+2020-12-21 22:42:52.764  INFO 15020 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-21 22:57:55.778  INFO 1016 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 1016 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 22:57:55.783 DEBUG 1016 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 22:57:55.785  INFO 1016 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 22:58:01.410  INFO 1016 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.545 seconds (JVM running for 8.214)
+2020-12-21 22:58:06.610  INFO 1016 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-21 22:58:38.599  INFO 1016 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-21 22:58:38.620  INFO 1016 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-21 22:59:52.213  INFO 1400 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 1400 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 22:59:52.220 DEBUG 1400 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 22:59:52.221  INFO 1400 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:00:10.063  INFO 1400 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 18.669 seconds (JVM running for 20.501)
+2020-12-21 23:00:39.038  INFO 1400 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-21 23:01:11.646  INFO 20172 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 20172 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:01:11.653 DEBUG 20172 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:01:11.655  INFO 20172 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:01:36.191  INFO 20172 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 25.482 seconds (JVM running for 27.487)
+2020-12-21 23:02:09.085  INFO 13828 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 13828 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:02:09.092 DEBUG 13828 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:02:09.094  INFO 13828 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:02:14.047  INFO 13828 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 5.686 seconds (JVM running for 7.423)
+2020-12-21 23:02:25.757  INFO 13828 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-21 23:02:25.758  INFO 13828 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-21 23:02:25.778  INFO 13828 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-21 23:02:43.026  INFO 7060 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 7060 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:02:43.032 DEBUG 7060 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:02:43.035  INFO 7060 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:03:02.914  INFO 7060 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 20.74 seconds (JVM running for 22.368)
+2020-12-21 23:05:23.034  INFO 14136 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 14136 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:05:23.040 DEBUG 14136 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:05:23.041  INFO 14136 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:05:36.863  INFO 14136 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 14.681 seconds (JVM running for 16.69)
+2020-12-21 23:05:53.933  INFO 14136 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-21 23:06:06.064  INFO 14136 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-21 23:06:06.089  INFO 14136 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-21 23:06:06.118  INFO 14136 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-21 23:12:27.791  INFO 160 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 160 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:12:27.796 DEBUG 160 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:12:27.798  INFO 160 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:12:32.223  INFO 160 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 4.969 seconds (JVM running for 6.399)
+2020-12-21 23:12:48.018  INFO 160 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-21 23:12:48.205  INFO 160 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : org.hibernate.hql.internal.ast.QuerySyntaxException: could not resolve property: id_tipos of: com.cmc.persistencia.Equipo [FROM com.cmc.persistencia.Equipo e INNER JOIN com.cmc.persistencia.Atributo a ON e.id_tipos = a.tipos]
+2020-12-21 23:12:48.227  INFO 160 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-21 23:12:48.246  INFO 160 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-21 23:13:54.659  INFO 12072 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 12072 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:13:54.664 DEBUG 12072 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:13:54.666  INFO 12072 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:14:05.091  INFO 12072 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 11.394 seconds (JVM running for 13.291)
+2020-12-21 23:14:49.636  INFO 12072 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-21 23:14:56.586  INFO 12072 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-21 23:14:56.587  INFO 12072 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-21 23:14:56.627  INFO 12072 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-21 23:15:39.955  INFO 13856 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 13856 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:15:39.961 DEBUG 13856 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:15:39.962  INFO 13856 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:15:52.707  INFO 13856 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 13.475 seconds (JVM running for 15.47)
+2020-12-21 23:16:12.881  INFO 13856 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-21 23:19:06.851  INFO 13856 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-21 23:19:06.851  INFO 13856 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-21 23:19:06.915  INFO 13856 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-21 23:26:20.527  INFO 5444 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 5444 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:26:20.532 DEBUG 5444 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:26:20.533  INFO 5444 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:26:25.441  INFO 5444 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 5.507 seconds (JVM running for 7.035)
+2020-12-21 23:26:34.701  INFO 5444 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-21 23:26:34.984  INFO 5444 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-21 23:26:34.986  INFO 5444 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-21 23:26:35.022  INFO 5444 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-21 23:26:55.968  INFO 2900 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 2900 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:26:55.974 DEBUG 2900 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:26:55.975  INFO 2900 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:27:04.033  INFO 2900 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 8.819 seconds (JVM running for 10.508)
+2020-12-21 23:27:17.733  INFO 2900 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-21 23:31:56.487  INFO 14012 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 14012 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:31:56.493 DEBUG 14012 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:31:56.495  INFO 14012 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:33:11.496  INFO 6780 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 6780 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:33:11.502 DEBUG 6780 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:33:11.503  INFO 6780 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:33:19.279  INFO 6780 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 8.62 seconds (JVM running for 10.452)
+2020-12-21 23:33:28.774  INFO 6780 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-21 23:55:38.572  INFO 8896 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 8896 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-21 23:55:38.579 DEBUG 8896 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-21 23:55:38.581  INFO 8896 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-21 23:55:46.317  INFO 8896 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 8.59 seconds (JVM running for 10.566)
+2020-12-21 23:55:54.074  INFO 8896 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-21 23:56:42.830  INFO 8896 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-21 23:56:42.830  INFO 8896 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-21 23:56:42.852  INFO 8896 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-22 00:13:42.147  INFO 13940 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 13940 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:13:42.156 DEBUG 13940 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:13:42.159  INFO 13940 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:13:48.823  INFO 13940 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 7.658 seconds (JVM running for 9.841)
+2020-12-22 00:13:54.212  INFO 13940 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:13:54.703  INFO 13940 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-22 00:13:54.731  INFO 13940 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:13:54.760  INFO 13940 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:14:43.636  INFO 7224 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 7224 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:14:43.643 DEBUG 7224 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:14:43.644  INFO 7224 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:14:49.614  INFO 7224 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.765 seconds (JVM running for 8.811)
+2020-12-22 00:14:56.655  INFO 7224 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:15:28.925  INFO 7224 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-22 00:15:28.925  INFO 7224 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-22 00:15:28.956  INFO 7224 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-22 00:20:28.388  INFO 9672 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 9672 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:20:28.396 DEBUG 9672 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:20:28.398  INFO 9672 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:20:49.277  INFO 19192 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 19192 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:20:49.284 DEBUG 19192 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:20:49.285  INFO 19192 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:20:55.170  INFO 19192 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.786 seconds (JVM running for 8.707)
+2020-12-22 00:21:02.005  INFO 19192 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:21:02.283  INFO 19192 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot create TypedQuery for query with more than one return using requested result type [com.cmc.persistencia.Atributo]
+2020-12-22 00:21:02.308  INFO 19192 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:21:02.344  INFO 19192 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:23:09.476  INFO 18860 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 18860 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:23:09.487 DEBUG 18860 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:23:09.489  INFO 18860 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:23:15.215  INFO 18860 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.685 seconds (JVM running for 8.774)
+2020-12-22 00:23:20.431  INFO 18860 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:23:20.605  INFO 18860 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot create TypedQuery for query with more than one return using requested result type [com.cmc.persistencia.Equipo]
+2020-12-22 00:23:20.630  INFO 18860 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:23:20.663  INFO 18860 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:25:49.351  INFO 12212 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 12212 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:25:49.357 DEBUG 12212 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:25:49.359  INFO 12212 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:25:55.715  INFO 12212 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 7.304 seconds (JVM running for 9.093)
+2020-12-22 00:26:01.039  INFO 12212 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:26:01.161  INFO 12212 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : org.hibernate.hql.internal.ast.QuerySyntaxException: equipo is not mapped [FROM equipo e JOIN e.atributo a ]
+2020-12-22 00:26:01.190  INFO 12212 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:26:01.222  INFO 12212 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:26:42.242  INFO 7428 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 7428 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:26:42.248 DEBUG 7428 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:26:42.251  INFO 7428 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:26:48.083  INFO 7428 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.664 seconds (JVM running for 9.042)
+2020-12-22 00:26:51.448  INFO 7428 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:26:51.720  INFO 7428 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : org.hibernate.QueryException: could not resolve property: Atributo of: com.cmc.persistencia.Equipo [FROM com.cmc.persistencia.Equipo e JOIN e.Atributo a ]
+2020-12-22 00:26:51.749  INFO 7428 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:26:51.781  INFO 7428 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:27:13.944  INFO 14512 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 14512 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:27:13.951 DEBUG 14512 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:27:13.954  INFO 14512 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:27:19.493  INFO 14512 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.327 seconds (JVM running for 8.478)
+2020-12-22 00:27:26.943  INFO 14512 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:27:27.161  INFO 14512 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : org.hibernate.QueryException: could not resolve property: atributo of: com.cmc.persistencia.Equipo [FROM com.cmc.persistencia.Equipo e JOIN e.atributo a ]
+2020-12-22 00:27:27.184  INFO 14512 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:27:27.205  INFO 14512 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:28:23.516  INFO 14120 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 14120 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:28:23.521 DEBUG 14120 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:28:23.523  INFO 14120 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:28:29.351  INFO 14120 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.529 seconds (JVM running for 8.352)
+2020-12-22 00:28:33.203  INFO 14120 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:28:33.349  INFO 14120 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : org.hibernate.QueryException: could not resolve property: atributos of: com.cmc.persistencia.Equipo [FROM com.cmc.persistencia.Equipo e JOIN e.atributos a ]
+2020-12-22 00:28:33.369  INFO 14120 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:28:33.400  INFO 14120 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:31:35.722  INFO 13916 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 13916 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:31:35.727 DEBUG 13916 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:31:35.728  INFO 13916 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:31:41.673  INFO 13916 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.889 seconds (JVM running for 8.975)
+2020-12-22 00:31:46.041  INFO 13916 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:31:46.175  INFO 13916 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : org.hibernate.QueryException: could not resolve property: atributo of: com.cmc.persistencia.Equipo [FROM com.cmc.persistencia.Equipo e JOIN e.atributo]
+2020-12-22 00:31:46.198  INFO 13916 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:31:46.217  INFO 13916 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:32:22.228  INFO 3508 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 3508 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:32:22.233 DEBUG 3508 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:32:22.235  INFO 3508 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:32:28.092  INFO 3508 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.807 seconds (JVM running for 8.941)
+2020-12-22 00:32:34.415  INFO 3508 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:32:34.618  INFO 3508 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : org.hibernate.QueryException: could not resolve property: atributos of: com.cmc.persistencia.Equipo [FROM com.cmc.persistencia.Equipo e JOIN e.atributos]
+2020-12-22 00:32:34.638  INFO 3508 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:32:34.658  INFO 3508 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:33:00.035  INFO 14024 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 14024 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:33:00.042 DEBUG 14024 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:33:00.043  INFO 14024 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:33:06.232  INFO 14024 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 7.041 seconds (JVM running for 8.951)
+2020-12-22 00:33:08.733  INFO 14024 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:33:08.960  INFO 14024 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : org.hibernate.QueryException: could not resolve property: atributos of: com.cmc.persistencia.Equipo [FROM com.cmc.persistencia.Equipo e JOIN e.atributos]
+2020-12-22 00:33:08.983  INFO 14024 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:33:09.003  INFO 14024 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:33:43.717  INFO 16624 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 16624 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:33:43.725 DEBUG 16624 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:33:43.727  INFO 16624 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:34:01.742  INFO 14256 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 14256 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:34:01.749 DEBUG 14256 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:34:01.751  INFO 14256 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:34:08.058  INFO 14256 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 7.281 seconds (JVM running for 9.181)
+2020-12-22 00:34:11.764  INFO 14256 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:34:11.967  INFO 14256 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot create TypedQuery for query with more than one return using requested result type [com.cmc.persistencia.Atributo]
+2020-12-22 00:34:12.019  INFO 14256 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:34:12.050  INFO 14256 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:35:07.764  INFO 13440 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 13440 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:35:07.769 DEBUG 13440 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:35:07.770  INFO 13440 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:35:13.952  INFO 13440 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 7.073 seconds (JVM running for 8.819)
+2020-12-22 00:35:24.361  INFO 13440 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:35:24.519  INFO 13440 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : org.hibernate.hql.internal.ast.QuerySyntaxException: could not resolve property: id_tipos of: com.cmc.persistencia.Equipo [FROM com.cmc.persistencia.Equipo e INNER JOIN com.cmc.persistencia.Atributo a ON e.id_tipos = e.id_tipos]
+2020-12-22 00:35:24.543  INFO 13440 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario
+2020-12-22 00:35:24.562  INFO 13440 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.Map.get(Object)" because the return value of "com.cmc.objetos.Diccionario.getDiccionario()" is null
+2020-12-22 00:36:13.273  INFO 12284 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 12284 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:36:13.279 DEBUG 12284 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:36:13.280  INFO 12284 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:36:19.752  INFO 12284 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 7.293 seconds (JVM running for 9.708)
+2020-12-22 00:36:38.477  INFO 12284 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:46:08.410  INFO 556 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 556 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 00:46:08.415 DEBUG 556 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 00:46:08.417  INFO 556 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 00:46:14.053  INFO 556 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.445 seconds (JVM running for 8.478)
+2020-12-22 00:46:40.124  INFO 556 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos

@@ -13,7 +13,7 @@ import com.cmc.objetos.Dato;
 import com.cmc.objetos.Diccionario;
 import com.cmc.objetos.JSHistoryAnalogic;
 import com.cmc.objetos.TagDictionary;
-import com.cmc.persistencia.THistoryAnalogic;
+import com.cmc.persistencia.HistoryAnalogic;
 import com.cmc.util.Conversiones;
 
 /**
@@ -27,7 +27,7 @@ import com.cmc.util.Conversiones;
 
 
 @Service
-public class Gestion_THistoryAnalogic implements IGestion_THistoryAnalogic {
+public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 
 
 	@Autowired
@@ -44,13 +44,13 @@ public class Gestion_THistoryAnalogic implements IGestion_THistoryAnalogic {
 
 			
 				List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());	
-				List<THistoryAnalogic> resultados = new ArrayList<THistoryAnalogic>();
+				List<HistoryAnalogic> resultados = new ArrayList<HistoryAnalogic>();
 				Timestamp fecha = Conversiones.toTimestamp(objeto.getFecha());
 
 			
 			for (Dato o : objeto.getDatos()) {
 				
-				THistoryAnalogic resultado = new THistoryAnalogic();
+				HistoryAnalogic resultado = new HistoryAnalogic();
 				resultado.setFecha(fecha);
 				resultado.setValor(Conversiones.toFloat(o.getValor()));
 				resultado.setTagName(tagNames.stream().filter(x -> o.getId().equals(x.getIdPlc())).map(TagDictionary::getTagname)

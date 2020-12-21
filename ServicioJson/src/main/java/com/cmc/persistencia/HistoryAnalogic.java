@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "historyanalogic")
-public class THistoryAnalogic {
+public class HistoryAnalogic {
 	
 	@Id
 	@Column(name = "id")
@@ -26,10 +26,10 @@ public class THistoryAnalogic {
 
 	
 	// Constructores
-	public THistoryAnalogic() {
+	public HistoryAnalogic() {
 	}
 	
-	public THistoryAnalogic(long id, Timestamp fecha, Float valor, String tagName) {
+	public HistoryAnalogic(long id, Timestamp fecha, Float valor, String tagName) {
 		super();
 		this.id = id;
 		this.fecha = fecha;
