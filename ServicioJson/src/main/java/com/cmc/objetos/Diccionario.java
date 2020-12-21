@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.cmc.log4j.Traza_Log;
-import com.cmc.persistencia.TObjeto;
+import com.cmc.persistencia.TDato;
 
 public class Diccionario {
 
@@ -20,7 +20,7 @@ public class Diccionario {
 		return diccionario;
 	}
 
-	public void generarDiccionario(List<TObjeto> rs) {
+	public void generarDiccionario(List<TDato> rs) {
 
 		try {
 			if (rs!=null) {
@@ -29,16 +29,18 @@ public class Diccionario {
 				Traza_Log.registro("  ##### Se va a proceder a generar el diccionario #####");
 	
 				Map<String, List<TagDictionary>> dicc = new HashMap<String, List<TagDictionary>>();
+				
+				
 	
 				// Recorremos los TObjeto para organizar por ip los idPlc y tagname
 	
-				for (TObjeto item : rs) {
+				/*for (TDato item : rs) {
 					if (!dicc.containsKey(item.getIp())) {
 						dicc.put(item.getIp(), new ArrayList<TagDictionary>());
 					}
 					dicc.get(item.getIp()).add(new TagDictionary(item.getTagName(), item.getIdPlc(),item.getEscalado(),item.isEsEscalado(),item.isAgregado(),item.getTiempoAgregado()));
 					
-				}
+				}*/
 	
 				Traza_Log.registro(" ##### Diccionario generado:" + dicc.toString() + " ######");
 				setDiccionario(dicc);
