@@ -15902,3 +15902,187 @@ antlr.SemanticException: could not resolve property: id_tipos of: com.cmc.persis
 2020-12-22 00:46:39.372  INFO 556 --- [http-nio-8080-exec-2] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
 2020-12-22 00:46:39.603  INFO 556 --- [http-nio-8080-exec-2] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
 2020-12-22 00:46:40.124  INFO 556 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : INNER JOIN Equipo y Atributos
+2020-12-22 00:51:54.338  INFO 556 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-22 00:51:54.339  INFO 556 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-22 00:51:54.366  INFO 556 --- [http-nio-8080-exec-2] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-22 01:07:23.268  INFO 16920 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-22 01:07:23.358  INFO 16920 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 16920 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 01:07:23.364 DEBUG 16920 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 01:07:23.367  INFO 16920 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 01:07:24.353  INFO 16920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-22 01:07:24.547  INFO 16920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172ms. Found 4 JPA repository interfaces.
+2020-12-22 01:07:25.334  INFO 16920 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-22 01:07:25.346  INFO 16920 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-22 01:07:25.347  INFO 16920 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-22 01:07:25.349  INFO 16920 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-22 01:07:25.549  INFO 16920 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-22 01:07:25.549  INFO 16920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2116 ms
+2020-12-22 01:07:25.820  INFO 16920 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-22 01:07:25.926  INFO 16920 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-22 01:07:26.165  INFO 16920 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-22 01:07:26.260  INFO 16920 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-22 01:07:26.876  INFO 16920 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-22 01:07:26.903  INFO 16920 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-22 01:07:27.814  INFO 16920 --- [main] o.h.t.PojoInstantiator                   : HHH000182: No default (no-argument) constructor for class: com.cmc.persistencia.EquiposAtributos (class must be instantiated by Interceptor)
+2020-12-22 01:07:27.966  INFO 16920 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-22 01:07:27.975  INFO 16920 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-22 01:07:28.434  WARN 16920 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-22 01:07:28.578  INFO 16920 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 01:07:28.929  INFO 16920 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-22 01:07:28.975  INFO 16920 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 01:07:28.978  INFO 16920 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 6.331 seconds (JVM running for 8.186)
+2020-12-22 01:07:34.790  INFO 16920 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-22 01:07:34.790  INFO 16920 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-22 01:07:34.803  INFO 16920 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 13 ms
+2020-12-22 01:07:35.390 ERROR 16920 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : com.cmc.persistencia.EquiposAtributos; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : com.cmc.persistencia.EquiposAtributos] with root cause
+
+org.hibernate.InstantiationException: No default constructor for entity:  : com.cmc.persistencia.EquiposAtributos
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:85) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:105) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.instantiate(AbstractEntityTuplizer.java:706) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:5170) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1598) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1582) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1762) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.getRow(Loader.java:1623) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:990) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:959) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2850) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2832) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2664) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2659) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1565) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1533) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.4.22.Final.jar:5.4.22.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:355) ~[spring-data-jpa-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371) ~[spring-data-commons-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204) ~[spring-data-commons-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:658) ~[spring-data-commons-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:622) ~[spring-data-commons-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:606) ~[spring-data-commons-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178) ~[spring-data-jpa-2.2.11.RELEASE.jar:2.2.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at com.sun.proxy.$Proxy104.findAll(Unknown Source) ~[?:?]
+	at com.cmc.hibernate.dao.EquiposDAO.buscarTodo(EquiposDAO.java:28) ~[classes/:?]
+	at com.cmc.hibernate.dao.EquiposDAO$$FastClassBySpringCGLIB$$56bece58.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at com.cmc.hibernate.dao.EquiposDAO$$EnhancerBySpringCGLIB$$7f306701.buscarTodo(<generated>) ~[classes/:?]
+	at com.cmc.hibernate.modelo.Gestion_Equipos.crearDiccionario(Gestion_Equipos.java:32) ~[classes/:?]
+	at com.cmc.hibernate.controlador.Controlador.datosHistoricos(Controlador.java:46) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+
+2020-12-22 01:08:41.151  INFO 9460 --- [background-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2020-12-22 01:08:41.266  INFO 9460 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on 50014583U with PID 9460 (C:\workspace-json\repository\ServJson\ServicioJson\target\classes started by dblas in C:\workspace-json\repository\ServJson\ServicioJson)
+2020-12-22 01:08:41.273 DEBUG 9460 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 01:08:41.275  INFO 9460 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
+2020-12-22 01:08:42.324  INFO 9460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-22 01:08:42.488  INFO 9460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154ms. Found 4 JPA repository interfaces.
+2020-12-22 01:08:43.506  INFO 9460 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-12-22 01:08:43.517  INFO 9460 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-22 01:08:43.519  INFO 9460 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-22 01:08:43.520  INFO 9460 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-22 01:08:43.661  INFO 9460 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-22 01:08:43.661  INFO 9460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2311 ms
+2020-12-22 01:08:44.006  INFO 9460 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-22 01:08:44.099  INFO 9460 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-22 01:08:44.293  INFO 9460 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-22 01:08:44.441  INFO 9460 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-22 01:08:45.108  INFO 9460 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-22 01:08:45.142  INFO 9460 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-12-22 01:08:46.374  INFO 9460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-22 01:08:46.391  INFO 9460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-22 01:08:47.003  WARN 9460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-22 01:08:47.232  INFO 9460 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 01:08:47.591  INFO 9460 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-12-22 01:08:47.639  INFO 9460 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 01:08:47.642  INFO 9460 --- [main] c.c.ServicioJsonApplication              : Started ServicioJsonApplication in 7.168 seconds (JVM running for 9.206)
+2020-12-22 01:08:50.708  INFO 9460 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-22 01:08:50.708  INFO 9460 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-22 01:08:50.721  INFO 9460 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 12 ms
+2020-12-22 01:15:30.354  INFO 9460 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
+2020-12-22 01:15:30.356  INFO 9460 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
+2020-12-22 01:15:30.378  INFO 9460 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
