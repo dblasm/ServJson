@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.cmc.hibernate.dao.THistoryAnalogicDAO;
+import com.cmc.hibernate.dao.HistoryAnalogicDAO;
 import com.cmc.log4j.Traza_Log;
 import com.cmc.objetos.Dato;
 import com.cmc.objetos.Diccionario;
@@ -31,7 +31,7 @@ public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 
 
 	@Autowired
-	private THistoryAnalogicDAO tResultado_dao;
+	private HistoryAnalogicDAO historyAnalogic_dao;
 	
 
 	//Métodos propios
@@ -67,7 +67,7 @@ public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 			}
 			
 				// Save de los resultados
-				tResultado_dao.cargarResultados(resultados);
+				historyAnalogic_dao.cargarResultados(resultados);
 			
 			}else {
 				

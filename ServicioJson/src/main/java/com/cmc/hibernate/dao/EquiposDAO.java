@@ -22,8 +22,6 @@ public class EquiposDAO {
 		return equiposAtributos.findAll();
 		
 	}
-	
-	
 
 	/*	
 		@Transactional 
@@ -44,5 +42,5 @@ public class EquiposDAO {
 
 	}
 	*/
-	
+
 }

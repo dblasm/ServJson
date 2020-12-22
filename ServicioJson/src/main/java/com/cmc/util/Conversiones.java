@@ -30,6 +30,7 @@ public class Conversiones {
 
 	}
 	
+
 	// Conversión de String a Integer
 		public static Integer toInt(String valor) {
 
@@ -42,4 +43,17 @@ public class Conversiones {
 			return Integer.parseInt(valor);
 
 		}
+
+	// Conversión de String a boolean
+		public static Boolean toBoolean(String valor) {
+			// boolean true/false
+			Boolean format = valor.matches("((true||false)||([0]||[1]))");
+
+			if ((valor == null) || (!format)) {
+				return null;
+			}
+			return Boolean.parseBoolean(valor);
+
+		}
+
 }

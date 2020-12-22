@@ -48,7 +48,9 @@ public class JSHistoryAnalogic {
 
 	@Override
 	public String toString() {
-		return "ObjOrigen [ip=" + ip + ", fecha=" + fecha + ", datos=" + datos + "]";
+		return "JSHistoryAnalogic [ip=" + ip + ", fecha=" + fecha + ", datos=" + datos + "]";
 	}
+
+	
 
 }
