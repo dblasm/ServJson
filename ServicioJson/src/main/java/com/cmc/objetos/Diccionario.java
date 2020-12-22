@@ -1,13 +1,11 @@
 package com.cmc.objetos;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import com.cmc.log4j.Traza_Log;
 import com.cmc.persistencia.EquiposAtributos;
-import com.cmc.persistencia.Equipo;
+
 
 public class Diccionario {
 
@@ -21,7 +19,7 @@ public class Diccionario {
 		return diccionario;
 	}
 
-	public void generarDiccionario(List<Equipo> rs) {
+	public void generarDiccionario(List<EquiposAtributos> rs) {
 
 		try {
 			if (rs !=null) {

@@ -29,7 +29,7 @@ public class Gestion_Equipos implements IGestion_Equipos {
 	public  Diccionario crearDiccionario(){
 		
 		Diccionario diccionario = new Diccionario();
-		diccionario.generarDiccionario(equiposDAO.consultaEquiposAtributos());
+		diccionario.generarDiccionario(equiposDAO.buscarTodo());
 		
 		return diccionario;
 		
