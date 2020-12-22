@@ -1,14 +1,10 @@
 package com.cmc.persistencia;
 
 
-import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -43,10 +39,6 @@ public class Atributo {
 	}
 
 
-
-
-
-
 	public Atributo(int id, String tipo, String attrname, float escalado, boolean esEscalado, boolean agregado,
 			int tiempoAgregado) {
 		this.id = id;
@@ -57,10 +49,6 @@ public class Atributo {
 		this.agregado = agregado;
 		this.tiempoAgregado = tiempoAgregado;
 	}
-
-
-
-
 
 
 	public int getId() {

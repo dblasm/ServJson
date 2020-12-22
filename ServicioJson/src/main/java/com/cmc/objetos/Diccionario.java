@@ -1,5 +1,6 @@
 package com.cmc.objetos;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,19 +28,17 @@ public class Diccionario {
 
 				Traza_Log.registro("  ##### Se va a proceder a generar el diccionario #####");
 	
-				Map<String, List<TagDictionary>> dicc = new HashMap<String, List<TagDictionary>>();
-				
-				
+				Map<String, List<TagDictionary>> dicc = new HashMap<String, List<TagDictionary>>();			
 	
 				// Recorremos los TObjeto para organizar por ip los idPlc y tagname
 	
-				/*for (EquiposAtributos item : rs) {
+				for (EquiposAtributos item : rs) {
 					if (!dicc.containsKey(item.getIp())) {
 						dicc.put(item.getIp(), new ArrayList<TagDictionary>());
 					}
-					dicc.get(item.getIp()).add(new TagDictionary(item.getTagName(), item.getIdPlc(),item.getEscalado(),item.isEsEscalado(),item.isAgregado(),item.getTiempoAgregado()));
+					dicc.get(item.getIp()).add(new TagDictionary(item.getTagname(), item.getAttrname(),item.getEscalado(),item.isEsEscalado(),item.isAgregado(),item.getTiempoAgregado()));
 					
-				}*/
+				}
 	
 				Traza_Log.registro(" ##### Diccionario generado:" + dicc.toString() + " ######");
 				setDiccionario(dicc);

@@ -1,18 +1,11 @@
 package com.cmc.hibernate.dao;
 
 import java.util.List;
-
-
-import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import com.cmc.hibernate.dao.EquiposDAO;
-import com.cmc.hibernate.repositorio.IEquipos;
 import com.cmc.hibernate.repositorio.IEquiposAtributos;
-import com.cmc.hibernate.util.HibernateUtil;
-import com.cmc.log4j.Traza_Log;
-import com.cmc.persistencia.Equipo;
 import com.cmc.persistencia.EquiposAtributos;
 
 @Repository

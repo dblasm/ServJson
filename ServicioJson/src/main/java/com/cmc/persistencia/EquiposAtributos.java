@@ -15,6 +15,8 @@ public class EquiposAtributos {
 	@Id
 	@Column (name = "tagname")
 	private String tagname;
+	@Column (name = "ip")
+	private String ip;
 	@Column (name = "tipo")
 	private String tipo; 	
 	@Column (name = "attrname")
@@ -34,9 +36,10 @@ public class EquiposAtributos {
 		super();
 		
 	}
-	public EquiposAtributos(String tagname, String tipo, String attrname, float escalado, boolean esEscalado,
+	public EquiposAtributos(String tagname,String ip ,String tipo, String attrname, float escalado, boolean esEscalado,
 			boolean agregado, int tiempoAgregado) {
 		this.tagname = tagname;
+		this.ip = ip;
 		this.tipo = tipo;
 		this.attrname = attrname;
 		this.escalado = escalado;
@@ -49,6 +52,13 @@ public class EquiposAtributos {
 	}
 	public void setTagname(String tagname) {
 		this.tagname = tagname;
+	}	
+	
+	public String getIp() {
+		return ip;
+	}
+	public void setIp(String ip) {
+		this.ip = ip;
 	}
 	public String getTipo() {
 		return tipo;
@@ -87,6 +97,12 @@ public class EquiposAtributos {
 		this.tiempoAgregado = tiempoAgregado;
 	}
 	
+	@Override
+	public String toString() {
+		return "EquiposAtributos [tagname=" + tagname + ", ip=" + ip + ", tipo=" + tipo + ", attrname=" + attrname
+				+ ", escalado=" + escalado + ", esEscalado=" + esEscalado + ", agregado=" + agregado
+				+ ", tiempoAgregado=" + tiempoAgregado + "]";
+	}
 	
 	
 }

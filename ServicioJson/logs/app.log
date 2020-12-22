@@ -349,3 +349,6 @@ TResultado [id=0, fecha=2020-12-11 11:23:12.0, valor=null, tagName=nr2]
 2020-12-22 01:15:30.354  INFO 9460 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :   ##### Se va a proceder a generar el diccionario #####
 2020-12-22 01:15:30.356  INFO 9460 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          :  ##### Diccionario generado:{} ######
 2020-12-22 01:15:30.378  INFO 9460 --- [http-nio-8080-exec-1] c.c.l.Traza_Log                          : Cannot invoke "java.util.List.stream()" because "tagNames" is null
+2020-12-22 08:34:43.656  INFO 7840 --- [main] c.c.ServicioJsonApplication              : Starting ServicioJsonApplication on DESKTOP-MPD1TNP with PID 7840 (C:\ProyectosEclipse\ServJson\ServicioJson\target\classes started by Desarrollo in C:\ProyectosEclipse\ServJson\ServicioJson)
+2020-12-22 08:34:43.691 DEBUG 7840 --- [main] c.c.ServicioJsonApplication              : Running with Spring Boot v2.2.11.RELEASE, Spring v5.2.10.RELEASE
+2020-12-22 08:34:43.698  INFO 7840 --- [main] c.c.ServicioJsonApplication              : No active profile set, falling back to default profiles: default
