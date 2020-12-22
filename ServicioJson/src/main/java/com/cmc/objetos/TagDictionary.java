@@ -4,6 +4,7 @@ package com.cmc.objetos;
 
 public class TagDictionary {
 
+	private int id;
 	private String tagname;
 	private String attrname;
 	private float escalado;
@@ -14,17 +15,26 @@ public class TagDictionary {
 	public TagDictionary() {
 		super();
 		
-	}
-	
-	public TagDictionary(String tagname, String attrname, float escalado, boolean esEscalado, boolean agregado,
+	}	
+
+	public TagDictionary(int id, String tagname, String attrname, float escalado, boolean esEscalado, boolean agregado,
 			int tiempoAgregado) {
 		super();
+		this.id = id;
 		this.tagname = tagname;
 		this.attrname = attrname;
 		this.escalado = escalado;
 		this.esEscalado = esEscalado;
 		this.agregado = agregado;
 		this.tiempoAgregado = tiempoAgregado;
+	}
+	
+
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public float getEscalado() {
@@ -74,9 +84,11 @@ public class TagDictionary {
 
 	@Override
 	public String toString() {
-		return "TagDictionary [tagname=" + tagname + ", attrname=" + attrname + ", escalado=" + escalado
+		return "TagDictionary [id=" + id + ", tagname=" + tagname + ", attrname=" + attrname + ", escalado=" + escalado
 				+ ", esEscalado=" + esEscalado + ", agregado=" + agregado + ", tiempoAgregado=" + tiempoAgregado + "]";
 	}
+
+	
 
 
 

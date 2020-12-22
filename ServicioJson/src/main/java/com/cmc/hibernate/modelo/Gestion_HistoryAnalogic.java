@@ -53,7 +53,7 @@ public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 				HistoryAnalogic resultado = new HistoryAnalogic();
 				resultado.setFecha(fecha);
 				resultado.setValor(Conversiones.toFloat(o.getValor()));
-				resultado.setTagName(tagNames.stream().filter(x -> o.getId().equals(x.getAttrname())).map(TagDictionary::getTagname)
+				resultado.setTagName(tagNames.stream().filter(x -> Conversiones.toInt(o.getId())==x.getId()).map(TagDictionary::getTagname)
 						.findAny().orElse(""));
 								
 				if (resultado.getFecha()== null || resultado.getValor() == null || resultado.getTagName() == ("")) {

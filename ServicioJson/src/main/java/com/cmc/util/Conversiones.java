@@ -29,4 +29,17 @@ public class Conversiones {
 		return Float.parseFloat(valor);
 
 	}
+	
+	// Conversión de String a Integer
+		public static Integer toInt(String valor) {
+
+			// int 
+			Boolean format = valor.matches("[0-9]+");
+
+			if ((valor == null) || (!format)) {
+				return null;
+			}
+			return Integer.parseInt(valor);
+
+		}
 }

@@ -11,9 +11,12 @@ import org.hibernate.annotations.Immutable;
 //@Table(name="equipos_atributos")
 @Immutable
 public class EquiposAtributos {	
-	//Equipos
+	
+	//Equipos	
+	@Column (name = "id")
+	private int id;
 	@Id
-	@Column (name = "tagname")
+	@Column (name = "tagnameF")
 	private String tagname;
 	@Column (name = "ip")
 	private String ip;
@@ -36,8 +39,12 @@ public class EquiposAtributos {
 		
 	}
 	
-	public EquiposAtributos(String tagname,String ip ,String tipo, String attrname, float escalado, boolean esEscalado,
-			boolean agregado, int tiempoAgregado) {
+	
+
+	public EquiposAtributos(int id, String tagname, String ip, String tipo, String attrname, float escalado,
+			boolean esEscalado, boolean agregado, int tiempoAgregado) {
+		super();
+		this.id = id;
 		this.tagname = tagname;
 		this.ip = ip;
 		this.tipo = tipo;
@@ -47,13 +54,24 @@ public class EquiposAtributos {
 		this.agregado = agregado;
 		this.tiempoAgregado = tiempoAgregado;
 	}
+
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getTagname() {
 		return tagname;
 	}
 	public void setTagname(String tagname) {
 		this.tagname = tagname;
-	}	
-	
+	}
+
 	public String getIp() {
 		return ip;
 	}
@@ -96,13 +114,16 @@ public class EquiposAtributos {
 	public void setTiempoAgregado(int tiempoAgregado) {
 		this.tiempoAgregado = tiempoAgregado;
 	}
-	
+
+
+
 	@Override
 	public String toString() {
-		return "EquiposAtributos [tagname=" + tagname + ", ip=" + ip + ", tipo=" + tipo + ", attrname=" + attrname
-				+ ", escalado=" + escalado + ", esEscalado=" + esEscalado + ", agregado=" + agregado
+		return "EquiposAtributos [id=" + id + ", tagname=" + tagname + ", ip=" + ip + ", tipo=" + tipo + ", attrname="
+				+ attrname + ", escalado=" + escalado + ", esEscalado=" + esEscalado + ", agregado=" + agregado
 				+ ", tiempoAgregado=" + tiempoAgregado + "]";
 	}
+	
 	
 	
 }

@@ -17,22 +17,24 @@ public class EquiposDAO {
 	// Métodos CRUD Hibernate
 
 	@Transactional
-	public List<EquiposAtributos> buscarTodo() {
+	public List<EquiposAtributos> buscarTodo() {		
+		
 		return equiposAtributos.findAll();
-
+		
 	}
 	
 	
 
-	/*	@Transactional 
-	public List<Equipo> consultaEquiposAtributos() {
+	/*	
+		@Transactional 
+	public List<EquiposAtributos> consultaEquiposAtributos() {
 	    
 		
 		
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             Traza_Log.registro("INNER JOIN Equipo y Atributos");
             String hql = ("FROM Equipo e INNER JOIN Atributo a ON e.id_tipo = e.id_tipo");
-			Query<Equipo> query = session.createQuery(hql);
+			Query query = session.createQuery(hql);
 			return query.getResultList();
 
         } catch (Exception e) {
@@ -40,7 +42,7 @@ public class EquiposDAO {
             return null;
         }
 
-	}*/
-	
+	}
+	*/
 	
 }

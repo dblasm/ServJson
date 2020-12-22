@@ -26,7 +26,7 @@ public class Gestion_Equipos implements IGestion_Equipos {
 	
 	
 	// Crea el diccionario
-	public  Diccionario crearDiccionario(){
+	public  Diccionario crearDiccionario() {
 		
 		Diccionario diccionario = new Diccionario();
 		diccionario.generarDiccionario(equiposDAO.buscarTodo());
