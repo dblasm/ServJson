@@ -74,7 +74,10 @@ public class TagDictionary {
 
 	@Override
 	public String toString() {
-		return "TagDictionary [tagname=" + tagname + ", attrname=" + attrname + "]";
+		return "TagDictionary [tagname=" + tagname + ", attrname=" + attrname + ", escalado=" + escalado
+				+ ", esEscalado=" + esEscalado + ", agregado=" + agregado + ", tiempoAgregado=" + tiempoAgregado + "]";
 	}
+
+
 
 }

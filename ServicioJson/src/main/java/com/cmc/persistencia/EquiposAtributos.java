@@ -8,7 +8,7 @@ import javax.persistence.Table;
 import org.hibernate.annotations.Immutable;
 
 @Entity
-@Table(name="equipos_atributos")
+//@Table(name="equipos_atributos")
 @Immutable
 public class EquiposAtributos {	
 	//Equipos
@@ -32,10 +32,10 @@ public class EquiposAtributos {
 	
 	
 	
-	public EquiposAtributos() {
-		super();
+	public EquiposAtributos() {		
 		
 	}
+	
 	public EquiposAtributos(String tagname,String ip ,String tipo, String attrname, float escalado, boolean esEscalado,
 			boolean agregado, int tiempoAgregado) {
 		this.tagname = tagname;

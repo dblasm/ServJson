@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.cmc.persistencia.EquiposAtributos;
 
 @Repository
-public interface IEquiposAtributos extends JpaRepository <EquiposAtributos, Integer>{			
+public interface IEquiposAtributos extends JpaRepository <EquiposAtributos, Long>{			
 	
 }

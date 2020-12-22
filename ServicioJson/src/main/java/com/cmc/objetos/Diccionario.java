@@ -24,20 +24,19 @@ public class Diccionario {
 
 		try {
 			if (rs !=null) {
-
-
+				
+				Traza_Log.registro(" ##### Resultados vista:" + rs.toString() + " ######");
 				Traza_Log.registro("  ##### Se va a proceder a generar el diccionario #####");
 	
 				Map<String, List<TagDictionary>> dicc = new HashMap<String, List<TagDictionary>>();			
 	
-				// Recorremos los TObjeto para organizar por ip los idPlc y tagname
+				// Recorremos los EquiposAtributos para organizar por ip los attrname y tagname
 	
 				for (EquiposAtributos item : rs) {
 					if (!dicc.containsKey(item.getIp())) {
 						dicc.put(item.getIp(), new ArrayList<TagDictionary>());
 					}
-					dicc.get(item.getIp()).add(new TagDictionary(item.getTagname(), item.getAttrname(),item.getEscalado(),item.isEsEscalado(),item.isAgregado(),item.getTiempoAgregado()));
-					
+					dicc.get(item.getIp()).add(new TagDictionary(item.getTagname(), item.getAttrname(),item.getEscalado(),item.isEsEscalado(),item.isAgregado(),item.getTiempoAgregado()));					
 				}
 	
 				Traza_Log.registro(" ##### Diccionario generado:" + dicc.toString() + " ######");
