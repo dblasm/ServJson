@@ -16,14 +16,12 @@ public class EquiposAtributos {
 	@Column (name = "id")
 	private int id;
 	@Id
-	@Column (name = "tagnameF")
+	@Column (name = "tagname")
 	private String tagname;
 	@Column (name = "ip")
 	private String ip;
 	@Column (name = "tipo")
-	private String tipo; 	
-	@Column (name = "attrname")
-	private String attrname;
+	private String tipo;
 	@Column (name = "escalado")
 	private float escalado;
 	@Column (name = "es_escalado")
@@ -41,14 +39,13 @@ public class EquiposAtributos {
 	
 	
 
-	public EquiposAtributos(int id, String tagname, String ip, String tipo, String attrname, float escalado,
+	public EquiposAtributos(int id, String tagname, String ip, String tipo, float escalado,
 			boolean esEscalado, boolean agregado, int tiempoAgregado) {
 		super();
 		this.id = id;
 		this.tagname = tagname;
 		this.ip = ip;
-		this.tipo = tipo;
-		this.attrname = attrname;
+		this.tipo = tipo;		
 		this.escalado = escalado;
 		this.esEscalado = esEscalado;
 		this.agregado = agregado;
@@ -84,12 +81,7 @@ public class EquiposAtributos {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	public String getAttrname() {
-		return attrname;
-	}
-	public void setAttrname(String attrname) {
-		this.attrname = attrname;
-	}
+
 	public float getEscalado() {
 		return escalado;
 	}
@@ -119,8 +111,7 @@ public class EquiposAtributos {
 
 	@Override
 	public String toString() {
-		return "EquiposAtributos [id=" + id + ", tagname=" + tagname + ", ip=" + ip + ", tipo=" + tipo + ", attrname="
-				+ attrname + ", escalado=" + escalado + ", esEscalado=" + esEscalado + ", agregado=" + agregado
+		return "EquiposAtributos [id=" + id + ", tagname=" + tagname + ", ip=" + ip + ", tipo=" + tipo  + ", escalado=" + escalado + ", esEscalado=" + esEscalado + ", agregado=" + agregado
 				+ ", tiempoAgregado=" + tiempoAgregado + "]";
 	}
 	

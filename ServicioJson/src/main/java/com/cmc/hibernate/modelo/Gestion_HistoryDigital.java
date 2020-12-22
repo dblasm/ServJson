@@ -44,7 +44,7 @@ public class Gestion_HistoryDigital implements IGestion_HistoryDigital{
 				HistoryDigital resultado = new HistoryDigital();
 				resultado.setFecha(fecha);
 				resultado.setValor(Conversiones.toBoolean(o.getValor()));
-				resultado.setTagName(tagNames.stream().filter(x -> o.getId().equals(x.getAttrname())).map(TagDictionary::getTagname)
+				resultado.setTagName(tagNames.stream().filter(x -> Conversiones.toInt(o.getId())==x.getId()).map(TagDictionary::getTagname)
 						.findAny().orElse(""));
 								
 				if (resultado.getFecha()== null || resultado.getValor() == null || resultado.getTagName() == ("")) {

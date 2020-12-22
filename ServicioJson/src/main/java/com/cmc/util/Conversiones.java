@@ -19,6 +19,8 @@ public class Conversiones {
 
 	// Conversión de String a Float
 	public static Float toFloat(String valor) {
+		
+		valor = valor.replace(',', '.');
 
 		// Float (+||-)ffff*.ffff*
 		Boolean format = valor.matches("(\\+||-)[0-9]+\\.[0-9]*");
