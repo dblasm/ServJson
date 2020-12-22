@@ -9,10 +9,10 @@ import com.cmc.log4j.Traza_Log;
 import com.cmc.persistencia.HistoryAnalogic;
 
 @Repository
-public class THistoryAnalogicDAO {
+public class HistoryAnalogicDAO {
 	
 	@Autowired
-	private IHistoryAnalogic tHistoryAnalogic_repo;
+	private IHistoryAnalogic historyAnalogic_repo;
 
 	//Métodos CRUD Hibernate
 	
@@ -21,7 +21,7 @@ public class THistoryAnalogicDAO {
 		try  {
 			
 			if (resultados != null) {			
-				tHistoryAnalogic_repo.saveAll(resultados);
+				historyAnalogic_repo.saveAll(resultados);
 				return true;
 			}else {
 				

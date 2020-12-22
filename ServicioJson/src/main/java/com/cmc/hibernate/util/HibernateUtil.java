@@ -12,6 +12,7 @@ import org.hibernate.service.ServiceRegistry;
 
 import com.cmc.persistencia.Equipo;
 import com.cmc.persistencia.HistoryAnalogic;
+import com.cmc.persistencia.HistoryDigital;
 import com.cmc.persistencia.EquiposAtributos;
 import com.cmc.persistencia.Atributo;
 
@@ -37,6 +38,7 @@ public class HibernateUtil {
 				
 				//Se añaden las clases que contienen las anotaciones a mapear
 				configuration.addAnnotatedClass(HistoryAnalogic.class);
+				configuration.addAnnotatedClass(HistoryDigital.class);
 				configuration.addAnnotatedClass(Equipo.class);
 				configuration.addAnnotatedClass(Atributo.class);
 				configuration.addAnnotatedClass(EquiposAtributos.class);

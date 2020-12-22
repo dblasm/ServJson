@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.cmc.objetos.Diccionario;
 import com.cmc.objetos.JSHistoryAnalogic;
+import com.cmc.objetos.JSHistoryDigital;
 import com.cmc.hibernate.modelo.Gestion_HistoryAnalogic;
+import com.cmc.hibernate.modelo.Gestion_HistoryDigital;
 import com.cmc.hibernate.modelo.Gestion_Equipos;
 
 
@@ -25,7 +27,9 @@ public class Controlador {
 //Inyección beans
 	
 	@Autowired
-	private Gestion_HistoryAnalogic gestion_tHistoryAnalogic;
+	private Gestion_HistoryAnalogic gestion_historyAnalogic;
+	@Autowired
+	private Gestion_HistoryDigital gestion_historyDigital;
 	@Autowired
 	private Gestion_Equipos gestion_Equipos;
 
@@ -39,12 +43,12 @@ public class Controlador {
 			
 		}			
 			
-        return ResponseEntity.ok().body(gestion_tHistoryAnalogic.cargarHistorico(JSHistoryAnalogic,diccionario));
+        return ResponseEntity.ok().body(gestion_historyAnalogic.cargarHistorico(JSHistoryAnalogic,diccionario));
     }
 	
 
 	//Consulta Json para datos Digitales
-	/*
+	
 	@GetMapping("/historyDigital/")
     public ResponseEntity<Boolean> datosHistoricos(@Valid @RequestBody JSHistoryDigital JSHistoryDigital) {
 		
@@ -53,8 +57,8 @@ public class Controlador {
 			
 		}			
 			
-        return ResponseEntity.ok().body(gestion_tHistoryDigital.cargarHistorico(JSHistoryDigital,diccionario));
+        return ResponseEntity.ok().body(gestion_historyDigital.cargarHistorico(JSHistoryDigital,diccionario));
     }
-	*/
+	
 	
 }

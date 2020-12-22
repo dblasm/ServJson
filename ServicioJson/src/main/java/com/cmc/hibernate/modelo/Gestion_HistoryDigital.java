@@ -7,52 +7,43 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.cmc.hibernate.dao.HistoryAnalogicDAO;
+
+import com.cmc.hibernate.dao.HistoryDigitalDAO;
 import com.cmc.log4j.Traza_Log;
 import com.cmc.objetos.Dato;
 import com.cmc.objetos.Diccionario;
-import com.cmc.objetos.JSHistoryAnalogic;
+import com.cmc.objetos.JSHistoryDigital;
 import com.cmc.objetos.TagDictionary;
-import com.cmc.persistencia.HistoryAnalogic;
+import com.cmc.persistencia.HistoryDigital;
 import com.cmc.util.Conversiones;
-
-/**
- * 
- * 
- * @author Déborah Blas Muñoz.
- * @version 1.0.
- * @since 10/12/2020.
- *
- */
 
 
 @Service
-public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
-
+public class Gestion_HistoryDigital implements IGestion_HistoryDigital{
 
 	@Autowired
-	private HistoryAnalogicDAO historyAnalogic_dao;
+	private HistoryDigitalDAO historyDigital_dao;
 	
 
 	//Métodos propios
 	
 	@Override
 	@Transactional
-	public boolean cargarHistorico(JSHistoryAnalogic objeto,Diccionario diccionario) {
+	public boolean cargarHistorico(JSHistoryDigital objeto,Diccionario diccionario) {
 		try  {
 			if (diccionario != null) {
 
 			
 				List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());	
-				List<HistoryAnalogic> resultados = new ArrayList<HistoryAnalogic>();
+				List<HistoryDigital> resultados = new ArrayList<HistoryDigital>();
 				Timestamp fecha = Conversiones.toTimestamp(objeto.getFecha());
 
 			
 			for (Dato o : objeto.getDatos()) {
 				
-				HistoryAnalogic resultado = new HistoryAnalogic();
+				HistoryDigital resultado = new HistoryDigital();
 				resultado.setFecha(fecha);
-				resultado.setValor(Conversiones.toFloat(o.getValor()));
+				resultado.setValor(Conversiones.toBoolean(o.getValor()));
 				resultado.setTagName(tagNames.stream().filter(x -> o.getId().equals(x.getAttrname())).map(TagDictionary::getTagname)
 						.findAny().orElse(""));
 								
@@ -67,7 +58,7 @@ public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 			}
 			
 				// Save de los resultados
-				historyAnalogic_dao.cargarResultados(resultados);
+				historyDigital_dao.cargarResultados(resultados);
 			
 			}else {
 				
