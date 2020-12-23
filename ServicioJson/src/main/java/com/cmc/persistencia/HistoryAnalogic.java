@@ -14,7 +14,7 @@ public class HistoryAnalogic {
 	
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
+	@GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE)
 	private long id;
 	@Column(name = "fecha", nullable = false)
 	private Timestamp fecha; 
