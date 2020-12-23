@@ -1,18 +1,12 @@
 package com.cmc.hibernate.util;
 
 import java.util.Properties;
-
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
-
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
-
-
 import com.cmc.persistencia.Equipo;
 import com.cmc.persistencia.HistoryAnalogic;
 import com.cmc.persistencia.HistoryDigital;
@@ -20,7 +14,7 @@ import com.cmc.persistencia.EquiposAtributos;
 import com.cmc.persistencia.Atributo;
 
 
-public class HibernateUtil {
+public class HibernateUtil {	
 	
 	private static SessionFactory sessionFactory;
 	public static SessionFactory getSessionFactory() {
@@ -50,6 +44,7 @@ public class HibernateUtil {
 				configuration.setProperties(settings);
 				
 				
+				
 				ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 						.applySetting(AvailableSettings.TRANSACTION_COORDINATOR_STRATEGY, "jdbc" )
 						.applySettings(configuration.getProperties())
@@ -63,7 +58,8 @@ public class HibernateUtil {
 		}
 	
 		return sessionFactory;
-	}
+	}	
 
+	
 	
 }

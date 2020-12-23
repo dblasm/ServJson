@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.cmc.persistencia.HistoryDigital;
 
-public interface IHistoryDigital extends JpaRepository <HistoryDigital, String>{
+public interface IHistoryDigital extends JpaRepository <HistoryDigital, Long>{
 
 }

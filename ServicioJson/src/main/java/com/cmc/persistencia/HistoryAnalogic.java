@@ -5,6 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
+import java.math.BigInteger;
 import java.sql.Timestamp;
 
 
@@ -13,9 +17,10 @@ import java.sql.Timestamp;
 public class HistoryAnalogic {
 	
 	@Id
+    @GeneratedValue(generator = "generator")
+    @GenericGenerator(name = "generator", strategy = "increment")
 	@Column(name = "id")
-	@GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
-	private long id;
+	private BigInteger id;
 	@Column(name = "fecha", nullable = false)
 	private Timestamp fecha; 
 	@Column(name = "valor", nullable = false)
@@ -29,7 +34,7 @@ public class HistoryAnalogic {
 	public HistoryAnalogic() {
 	}
 	
-	public HistoryAnalogic(long id, Timestamp fecha, Float valor, String tagName) {
+	public HistoryAnalogic(BigInteger id, Timestamp fecha, Float valor, String tagName) {
 		super();
 		this.id = id;
 		this.fecha = fecha;
@@ -65,11 +70,11 @@ public class HistoryAnalogic {
 		this.tagName = tagName;
 	}
 
-	public long getId() {
+	public BigInteger getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(BigInteger id) {
 		this.id = id;
 	}
 

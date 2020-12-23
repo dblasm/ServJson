@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cmc.objetos.Diccionario;
 import com.cmc.objetos.JSHistoryAnalogic;
 import com.cmc.objetos.JSHistoryDigital;
+import com.cmc.objetos.Response;
 import com.cmc.hibernate.modelo.Gestion_HistoryAnalogic;
 import com.cmc.hibernate.modelo.Gestion_HistoryDigital;
 import com.cmc.hibernate.modelo.Gestion_Equipos;
@@ -59,6 +60,15 @@ public class Controlador {
 			
         return ResponseEntity.ok().body(gestion_historyDigital.cargarHistorico(JSHistoryDigital,diccionario));
     }
+	
+	//Respuesta para Tridium
+	
+		@GetMapping("/tridium/")
+	    public ResponseEntity<Response> respuesta() {			
+			
+	        return ResponseEntity.ok().body(new Response("Respuesta","2020-12-23 17:45:33","enviado desde servicio JSON"));
+	        
+	    }
 	
 	
 }
