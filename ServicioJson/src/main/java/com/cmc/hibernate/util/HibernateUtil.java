@@ -33,8 +33,12 @@ public class HibernateUtil {
 				settings.put(Environment.DIALECT, "org.hibernate.dialect.SQLServer2012Dialect");
 				
 				settings.put(Environment.SHOW_SQL, "true");
-				
+				settings.put("hibernate.jdbc.batch_size", 500);
+				settings.put("hibernate.order_inserts", true);
+				settings.put("hibernate.order_updates", true);
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
+				
+				
 				
 				//Se añaden las clases que contienen las anotaciones a mapear
 				configuration.addAnnotatedClass(HistoryAnalogic.class);
