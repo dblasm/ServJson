@@ -1,5 +1,6 @@
 package com.cmc.hibernate.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +23,26 @@ public class HistoryDigitalDAO {
 	public boolean cargarResultados(List<HistoryDigital> resultados) {
 		try  {
 			
-			if (resultados != null) {			
-				historyDigital_repo.saveAll(resultados);
+			if (resultados != null) {
+				int size = resultados.size();
+				int counter = 0;
+				
+				List<HistoryDigital> temp = new ArrayList<>();
+				
+				for (HistoryDigital hd : resultados) {
+					temp.add(hd);
+
+					if ((counter + 1) % 500 == 0 || (counter + 1) == size) {						
+						historyDigital_repo.saveAll(temp);
+						temp.clear();
+						
+					}
+
+					counter++;
+				}
+				
 				return true;
+				
 			}else {
 				
 				Traza_Log.registro("No hay elementos a insertar en la tabla de históricos");
@@ -39,3 +57,26 @@ public class HistoryDigitalDAO {
 	}
 
 }
+
+/*
+	
+	@Transactional
+	public void saveEmployees(List<Employee> employees) {
+		int size = employees.size();
+		int counter = 0;
+
+		List<Employee> temp = new ArrayList<>();
+
+		for (Employee emp : employees) {
+			temp.add(emp);
+
+			if ((counter + 1) % 500 == 0 || (counter + 1) == size) {
+				employeeRepository.saveAll(temp);
+				temp.clear();
+			}
+
+			counter++;
+		}
+	}
+
+*/
