@@ -1,27 +1,28 @@
 package com.cmc.persistencia;
 
-import java.sql.Timestamp;
 
+import java.math.BigInteger;
+import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import org.hibernate.annotations.GenericGenerator;
 
 
 @Entity
 @Table(name = "historydigital")
-public class HistoryDigital {
-
-	
-	@Id
+public class HistoryDigital {    
+    @Id
+    @GeneratedValue(generator = "generator")
+    @GenericGenerator(name = "generator", strategy = "increment")
 	@Column(name = "id")
-	@GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
-	private long id;
+	private BigInteger id;
 	@Column(name = "fecha", nullable = false)
 	private Timestamp fecha; 
 	@Column(name = "valor", nullable = false)
-	private Boolean valor;
+	private Boolean valor;	
 	@Column(name = "tagname", nullable = false)
 	private String tagName;
 	
@@ -32,7 +33,7 @@ public class HistoryDigital {
 
 
 
-	public HistoryDigital(long id, Timestamp fecha, Boolean valor, String tagName) {
+	public HistoryDigital(BigInteger id, Timestamp fecha, Boolean valor, String tagName) {
 		this.id = id;
 		this.fecha = fecha;
 		this.valor = valor;
@@ -41,13 +42,13 @@ public class HistoryDigital {
 
 
 
-	public long getId() {
+	public BigInteger getId() {
 		return id;
 	}
 
 
 
-	public void setId(long id) {
+	public void setId(BigInteger id) {
 		this.id = id;
 	}
 
@@ -94,13 +95,6 @@ public class HistoryDigital {
 	@Override
 	public String toString() {
 		return "HistoryDigital [id=" + id + ", fecha=" + fecha + ", valor=" + valor + ", tagName=" + tagName + "]";
-	} 
-	
-	
-	
-	
-	
-	
-	
+	}
 	
 }
