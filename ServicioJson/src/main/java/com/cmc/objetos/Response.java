@@ -1,6 +1,10 @@
 package com.cmc.objetos;
 
-public class Response {
+
+import java.util.List;
+
+
+public class Response {	
 	
 	private String contenedor;
 	private String fecha;
