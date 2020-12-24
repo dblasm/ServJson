@@ -2,11 +2,14 @@ package com.cmc.hibernate.modelo;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.cmc.hibernate.controlador.Controlador;
 import com.cmc.hibernate.dao.HistoryAnalogicDAO;
 import com.cmc.log4j.Traza_Log;
 import com.cmc.objetos.Dato;
@@ -67,6 +70,8 @@ public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 			}
 			
 				// Save de los resultados
+				Controlador.respuesta.setFecha(new Date().toString());				
+				Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Analogic ,datos recibidos: " + objeto.getDatos().size() + " datos a escribir: " + resultados.size(),true);
 				historyAnalogic_dao.cargarResultados(resultados);
 			
 			}else {

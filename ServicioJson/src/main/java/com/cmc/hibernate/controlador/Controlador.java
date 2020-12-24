@@ -1,11 +1,6 @@
 package com.cmc.hibernate.controlador;
 
 
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cmc.objetos.Diccionario;
 import com.cmc.objetos.JSHistoryAnalogic;
 import com.cmc.objetos.JSHistoryDigital;
-import com.cmc.objetos.Mensaje;
 import com.cmc.objetos.Response;
 import com.cmc.hibernate.modelo.Gestion_HistoryAnalogic;
 import com.cmc.hibernate.modelo.Gestion_HistoryDigital;
@@ -29,7 +23,8 @@ import com.cmc.hibernate.modelo.Gestion_Equipos;
 @RequestMapping("/historico/v0/")
 public class Controlador {
 	
-	private static Diccionario diccionario; 
+	private static Diccionario diccionario;
+	public static Response respuesta;
 
 //Inyección beans
 	
@@ -47,7 +42,7 @@ public class Controlador {
 		
 		if (diccionario == null) {
 			diccionario = gestion_Equipos.crearDiccionario();
-			
+			respuesta = gestion_Equipos.crearRespuesta();
 		}			
 			
         return ResponseEntity.ok().body(gestion_historyAnalogic.cargarHistorico(JSHistoryAnalogic,diccionario));
@@ -61,7 +56,7 @@ public class Controlador {
 		
 		if (diccionario == null) {
 			diccionario = gestion_Equipos.crearDiccionario();
-			
+			respuesta = gestion_Equipos.crearRespuesta();
 		}			
 			
         return ResponseEntity.ok().body(gestion_historyDigital.cargarHistorico(JSHistoryDigital,diccionario));
@@ -70,19 +65,9 @@ public class Controlador {
 	//Respuesta para Tridium
 	
 		@GetMapping("/tridium/")
-	    public ResponseEntity<Response> respuesta() {
-			
-			List<Mensaje> datos =new ArrayList<>();
-			Mensaje data = new Mensaje (1,"172.16.100.1","ok",true);
-			datos.add(data);
-			data = new Mensaje (2,"172.16.100.2","fallo en guardar todos los registros",false);	
-			datos.add(data);
-			data = new Mensaje (3,"172.16.100.3","aviso",true);	
-			datos.add(data);
+	    public ResponseEntity<Response> respuesta() {			
 						
-	        return ResponseEntity.ok().body(new Response("2020-12-23 17:45:33","enviado desde servicio JSON",datos));
+	        return ResponseEntity.ok().body(respuesta);
 	        
 	    }
-	
-	
 }
