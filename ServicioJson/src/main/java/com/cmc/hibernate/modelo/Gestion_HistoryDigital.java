@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.cmc.hibernate.dao.HistoryDigitalDAO;
+import com.cmc.hibernate.repositorio.IHistoryDigital;
 import com.cmc.log4j.Traza_Log;
 import com.cmc.objetos.Dato;
 import com.cmc.objetos.Diccionario;
@@ -21,8 +22,10 @@ import com.cmc.util.Conversiones;
 @Service
 public class Gestion_HistoryDigital implements IGestion_HistoryDigital{
 
+	//@Autowired
+	//private HistoryDigitalDAO historyDigital_dao;
 	@Autowired
-	private HistoryDigitalDAO historyDigital_dao;
+	private IHistoryDigital historyDigital_repo;
 	
 
 	//Métodos propios
@@ -58,7 +61,8 @@ public class Gestion_HistoryDigital implements IGestion_HistoryDigital{
 			}
 			
 				// Save de los resultados
-				historyDigital_dao.cargarResultados(resultados);
+				//historyDigital_dao.cargarResultados(resultados);
+				cargarResultados(resultados);
 			
 			}else {
 				
@@ -68,6 +72,42 @@ public class Gestion_HistoryDigital implements IGestion_HistoryDigital{
 			
 			
 			return true;
+		} catch (Exception e) {
+			Traza_Log.registro(e.getMessage());
+			return false;
+		}
+	}
+	
+	@Transactional
+	public boolean cargarResultados(List<HistoryDigital> resultados) {
+		try  {
+			
+			if (resultados != null) {
+				int size = resultados.size();
+				int counter = 0;
+				
+				List<HistoryDigital> temp = new ArrayList<>();
+				
+				for (HistoryDigital hd : resultados) {
+					temp.add(hd);
+
+					if ((counter + 1) % 500 == 0 || (counter + 1) == size) {						
+						historyDigital_repo.saveAll(temp);
+						temp.clear();
+					}
+
+					counter++;
+				}
+				
+				return true;
+				
+			}else {
+				
+				Traza_Log.registro("No hay elementos a insertar en la tabla de históricos");
+				return false;
+			}
+
+
 		} catch (Exception e) {
 			Traza_Log.registro(e.getMessage());
 			return false;
