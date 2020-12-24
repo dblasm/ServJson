@@ -14,11 +14,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ServicioJson</name>
 	<description>Demo project for Spring Boot-mssql-jpa-hibernate-crud-restful</description>
+<packaging>war</packaging>
 
 	<properties>
 		<java.version>15</java.version>
 		<jackson-databind.version>2.10.3</jackson-databind.version>
 		<jackson-dataformat-yaml.version>2.10.3</jackson-dataformat-yaml.version>
+	
 	</properties>
 
 	<dependencies>
@@ -29,13 +31,19 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<!-- AGREGO EXCLUSIÓN PARA TRAZAS POR LOG4J2 -->
+			<!-- SE AGREGA EXCLUSIÓN PARA TRABAJAR CON TRAZAS DE LOG4J2 -->
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-logging</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
@@ -53,31 +61,33 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- AGREGO log4j2 -->
+		<!-- SE AGREGA DEPENDECIA PARA LOG4J2 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
-		<!-- AGREGO jackson para gestión de la configuración YAML -->
+		<!--SE AGREGA DEPENDENCIAS JACKSON PARA GESTIÓN DE LA CONFIGURACIÓN DE 
+			YAML -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<!-- <version>${jackson-databind.version}</version> -->
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-yaml</artifactId>
-			<!-- <version>${jackson-dataformat-yaml.version}</version> -->
 		</dependency>
 	</dependencies>
 
 	<build>
+	
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		
+		<finalName>${artifactId}</finalName>
 	</build>
 
 </project>

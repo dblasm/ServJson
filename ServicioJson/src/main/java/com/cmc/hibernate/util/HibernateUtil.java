@@ -35,6 +35,8 @@ public class HibernateUtil {
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
 					
 				
+				
+				
 				//Se añaden las clases que contienen las anotaciones a mapear
 				configuration.addAnnotatedClass(HistoryAnalogic.class);
 				configuration.addAnnotatedClass(HistoryDigital.class);
