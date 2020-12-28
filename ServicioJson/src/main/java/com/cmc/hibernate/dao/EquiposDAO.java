@@ -23,24 +23,5 @@ public class EquiposDAO {
 		
 	}
 
-	/*	
-		@Transactional 
-	public List<EquiposAtributos> consultaEquiposAtributos() {
-	    
-		
-		
-		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            Traza_Log.registro("INNER JOIN Equipo y Atributos");
-            String hql = ("FROM Equipo e INNER JOIN Atributo a ON e.id_tipo = e.id_tipo");
-			Query query = session.createQuery(hql);
-			return query.getResultList();
-
-        } catch (Exception e) {
-        	Traza_Log.registro(e.getMessage());
-            return null;
-        }
-
-	}
-	*/
 
 }

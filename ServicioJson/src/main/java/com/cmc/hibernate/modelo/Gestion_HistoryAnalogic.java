@@ -76,14 +76,24 @@ public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 			
 			}else {
 				
-				Traza_Log.registro("Diccionario no generado, recibido un null",Traza_Log.LOG_ERROR);
+				Traza_Log.registro("objeto.null",Traza_Log.LOG_ERROR,new String[]{"diccionario"});
+				
+				// Save de los resultados
+				Controlador.respuesta.setFecha(new Date().toString());				
+				Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Diccionario no generado, recibido un null",false);
+				
 				return false;
 			}		
 			
 			
 			return true;
 		} catch (Exception e) {
-			Traza_Log.registro(e.getMessage());
+			Traza_Log.registro("try.catch.exception",Traza_Log.LOG_ERROR,new String[]{"cargaHistorico analógico",e.getMessage()});
+			
+			// Save de los resultados
+			Controlador.respuesta.setFecha(new Date().toString());				
+			Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Fallo en cargar histórico analógico",false);
+			
 			return false;
 		}
 	}

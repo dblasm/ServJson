@@ -6,17 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Response {	
+public class Respuesta {	
 	
 	private String fecha;	
 	private List<Mensaje> datos;	
 
-	public Response() {
+	public Respuesta() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Response(String fecha,List<Mensaje> data) {
+	public Respuesta(String fecha,List<Mensaje> data) {
 		super();		
 		this.fecha = fecha;		
 		this.datos = data;
@@ -78,7 +78,7 @@ public class Response {
 		
 		
 	}
-	
+
 
 }
 

@@ -25,13 +25,13 @@ public class HistoryAnalogicDAO {
 				return true;
 			}else {
 				
-				Traza_Log.registro("No hay elementos a insertar en la tabla de históricos");
+				Traza_Log.registro("objeto.null",Traza_Log.LOG_ERROR,new String[]{"lista HistoryAnalogic"});
 				return false;
 			}
 
 
 		} catch (Exception e) {
-			Traza_Log.registro(e.getMessage());
+			Traza_Log.registro("try.catch.exception",Traza_Log.LOG_ERROR,new String[]{"cargarResultados analógico",e.getMessage()});
 			return false;
 		}
 	}

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cmc.objetos.Diccionario;
 import com.cmc.objetos.JSHistoryAnalogic;
 import com.cmc.objetos.JSHistoryDigital;
-import com.cmc.objetos.Response;
+import com.cmc.objetos.Respuesta;
 import com.cmc.hibernate.modelo.Gestion_HistoryAnalogic;
 import com.cmc.hibernate.modelo.Gestion_HistoryDigital;
 import com.cmc.hibernate.modelo.Gestion_Equipos;
@@ -30,7 +30,7 @@ public class Controlador{
 	
 	//Instancia para uso de la clase Diccionario
 	private static Diccionario diccionario;
-	public static Response respuesta;
+	public static Respuesta respuesta;
 
 	//Inyección beans TODO: Comprobar si hay que anotar una a una las instancias
 	@Autowired
@@ -74,7 +74,7 @@ public class Controlador{
 	//Respuesta para Tridium
 	
 		@GetMapping("/tridium/")
-	    public ResponseEntity<Response> respuesta() {			
+	    public ResponseEntity<Respuesta> respuesta() {			
 						
 	        return ResponseEntity.ok().body(respuesta);
 	        
