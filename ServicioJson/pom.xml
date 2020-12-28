@@ -14,13 +14,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ServicioJson</name>
 	<description>Demo project for Spring Boot-mssql-jpa-hibernate-crud-restful</description>
-<packaging>war</packaging>
+
+	<!-- DEFINICIÓN DE TIPO DE EMPAQUETADO. Al ser servicio web debe ser tipo WAR -->
+	<packaging>war</packaging>
 
 	<properties>
 		<java.version>15</java.version>
 		<jackson-databind.version>2.10.3</jackson-databind.version>
 		<jackson-dataformat-yaml.version>2.10.3</jackson-dataformat-yaml.version>
-	
+
 	</properties>
 
 	<dependencies>
@@ -79,15 +81,16 @@
 	</dependencies>
 
 	<build>
-	
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		
-		<finalName>${artifactId}</finalName>
+
+		<!-- Nombre del archivo war para empaquetado: artifactId -->
+		<finalName>${name}</finalName>
 	</build>
 
 </project>
