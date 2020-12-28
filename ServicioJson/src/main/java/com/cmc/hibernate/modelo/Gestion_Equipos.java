@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.cmc.hibernate.dao.EquiposDAO;
 import com.cmc.objetos.Diccionario;
-import com.cmc.objetos.Response;
+import com.cmc.objetos.Respuesta;
 
 
 /**
@@ -36,9 +36,9 @@ public class Gestion_Equipos implements IGestion_Equipos {
 		
 	}
 	
-	public Response crearRespuesta() {
+	public Respuesta crearRespuesta() {
 		
-		Response respuesta = new Response();
+		Respuesta respuesta = new Respuesta();
 		return respuesta;
 	}
 	

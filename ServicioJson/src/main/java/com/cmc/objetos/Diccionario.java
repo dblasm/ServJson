@@ -27,8 +27,8 @@ public class Diccionario {
 		try {
 			if (rs !=null) {
 				
-				Traza_Log.registro(" ##### Resultados vista:"  +rs.toString() + "  ######");
-				Traza_Log.registro("  ##### Se va a proceder a generar el diccionario #####");
+				Traza_Log.registro(" ##### Resultados vista:"  +rs.toString() + "  ######",Traza_Log.LOG_INFO);
+				Traza_Log.registro(" ##### Se va a proceder a generar el diccionario #####",Traza_Log.LOG_INFO);
 	
 				Map<String, List<TagDictionary>> dicc = new HashMap<String, List<TagDictionary>>();			
 	
@@ -41,14 +41,14 @@ public class Diccionario {
 					dicc.get(item.getIp()).add(new TagDictionary(item.getId(),item.getTagname(),item.getEscalado(),item.isEsEscalado(),item.isAgregado(),item.getTiempoAgregado()));					
 				}
 	
-				Traza_Log.registro(" ##### Diccionario generado ######");
+				Traza_Log.registro(" ##### Diccionario generado ######",Traza_Log.LOG_INFO);
 				setDiccionario(dicc);
 			}else {
-				Traza_Log.registro(" No se ha encontrado datos en la tabla de ip's, por lo tanto no se genera el diccionario");	
+				Traza_Log.registro("objeto.null",Traza_Log.LOG_ERROR,new String[]{"lista equipos_atribtos"});	
 			}
 
 		} catch (Exception e) {
-			Traza_Log.registro(e.getMessage());
+			Traza_Log.registro("try.catch.exception",Traza_Log.LOG_ERROR,new String[]{"diccionario",e.getMessage()});
 			setDiccionario(null);
 		}
 		
