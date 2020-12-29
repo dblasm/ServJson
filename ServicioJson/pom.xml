@@ -15,14 +15,14 @@
 	<name>ServicioJson</name>
 	<description>Demo project for Spring Boot-mssql-jpa-hibernate-crud-restful</description>
 
-	<!-- DEFINICIÓN DE TIPO DE EMPAQUETADO. Al ser servicio web debe ser tipo WAR -->
-	<packaging>war</packaging>
+	<!-- DEFINICIÓN DE TIPO DE EMPAQUETADO. Al ser servicio web debe ser tipo 
+		WAR-->
+	<packaging>jar</packaging>
 
 	<properties>
-		<java.version>15</java.version>
+	
 		<jackson-databind.version>2.10.3</jackson-databind.version>
 		<jackson-dataformat-yaml.version>2.10.3</jackson-dataformat-yaml.version>
-
 	</properties>
 
 	<dependencies>
@@ -41,11 +41,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
+		<!-- SE AGREGA DEPENDECIA PARA DESPLIEGUE CON TOMCAT -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
+				
 		</dependency>
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
@@ -81,7 +81,7 @@
 	</dependencies>
 
 	<build>
-
+	
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -89,8 +89,9 @@
 			</plugin>
 		</plugins>
 
-		<!-- Nombre del archivo war para empaquetado: artifactId -->
-		<finalName>${name}</finalName>
+		 <!--Nombre del archivo war para empaquetado: artifactId -->
+		<finalName>${artifactId}</finalName>
+		
 	</build>
 
 </project>

@@ -3,7 +3,6 @@ package com.cmc.hibernate.controlador;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +23,6 @@ import com.cmc.hibernate.modelo.Gestion_Equipos;
  */
 
 @RestController
-@Controller // TODO: Comprobar si es necesaria o si con RestController es suficiente
 @RequestMapping("/historico/v0/")
 public class Controlador{	
 	
@@ -55,8 +53,6 @@ public class Controlador{
         return ResponseEntity.ok().body(gestion_historyAnalogic.cargarHistorico(JSHistoryAnalogic,diccionario));
     }
 
-
-	
 	
 	// Consulta Json para datos Digitales
 	
@@ -79,5 +75,6 @@ public class Controlador{
 	        return ResponseEntity.ok().body(respuesta);
 	        
 	    }
+		
 
 }
