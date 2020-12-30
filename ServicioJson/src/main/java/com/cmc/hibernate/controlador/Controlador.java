@@ -30,7 +30,7 @@ public class Controlador{
 	private static Diccionario diccionario;
 	public static Respuesta respuesta;
 
-	//Inyección beans TODO: Comprobar si hay que anotar una a una las instancias
+	//Inyección beans
 	@Autowired
 	private Gestion_HistoryAnalogic gestion_historyAnalogic;
 	@Autowired

@@ -1,4 +1,4 @@
-package com.cmc.hibernate.util;
+/*package com.cmc.hibernate.util;
 
 import java.util.Properties;
 import org.hibernate.SessionFactory;
@@ -12,6 +12,8 @@ import com.cmc.persistencia.HistoryAnalogic;
 import com.cmc.persistencia.HistoryDigital;
 import com.cmc.persistencia.EquiposAtributos;
 import com.cmc.persistencia.Atributo;
+
+// CONFIGURACIÓN DE SESSIÓNFACTORY PARA CREACIÓN DE TRANSACCIONES PROPIAS
 
 
 public class HibernateUtil {	
@@ -28,14 +30,9 @@ public class HibernateUtil {
 				settings.put(Environment.URL, "jdbc:sqlserver://175.26.1.253:1433;databaseName=DevDB");
 				settings.put(Environment.USER, "AXPO_WEB_DD");
 				settings.put(Environment.PASS, "aXp0_12_@");
-				settings.put(Environment.DIALECT, "org.hibernate.dialect.SQLServer2012Dialect");
-				
-				settings.put(Environment.SHOW_SQL, "true");
-				
+				settings.put(Environment.DIALECT, "org.hibernate.dialect.SQLServer2012Dialect");				
+				settings.put(Environment.SHOW_SQL, "true");				
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
-					
-				
-				
 				
 				//Se añaden las clases que contienen las anotaciones a mapear
 				configuration.addAnnotatedClass(HistoryAnalogic.class);
@@ -44,8 +41,6 @@ public class HibernateUtil {
 				configuration.addAnnotatedClass(Atributo.class);
 				configuration.addAnnotatedClass(EquiposAtributos.class);
 				configuration.setProperties(settings);
-				
-				
 				
 				ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 						.applySetting(AvailableSettings.TRANSACTION_COORDINATOR_STRATEGY, "jdbc" )
@@ -61,7 +56,6 @@ public class HibernateUtil {
 	
 		return sessionFactory;
 	}	
-
 	
 	
-}
+}*/

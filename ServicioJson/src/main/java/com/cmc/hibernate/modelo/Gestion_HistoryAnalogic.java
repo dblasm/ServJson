@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.cmc.hibernate.controlador.Controlador;
 import com.cmc.hibernate.dao.HistoryAnalogicDAO;
 import com.cmc.log4j.Traza_Log;
-import com.cmc.objetos.Dato;
+import com.cmc.objetos.DatoAnalogic;
 import com.cmc.objetos.Diccionario;
 import com.cmc.objetos.JSHistoryAnalogic;
 import com.cmc.objetos.TagDictionary;
@@ -51,7 +51,7 @@ public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 				Timestamp fecha = Conversiones.toTimestamp(objeto.getFecha());
 
 			
-			for (Dato o : objeto.getDatos()) {
+			for (DatoAnalogic o : objeto.getDatos()) {
 				
 				HistoryAnalogic resultado = new HistoryAnalogic();
 				resultado.setFecha(fecha);

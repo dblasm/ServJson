@@ -9,13 +9,13 @@ public class JSHistoryAnalogic {
 	
 	private String ip;
 	private String fecha;
-	private Set<Dato> datos;
+	private Set<DatoAnalogic> datos;
 
 	// Constructores
 	public JSHistoryAnalogic() {
 	}
 
-	public JSHistoryAnalogic(String ip, String fecha, Set<Dato> datos) {
+	public JSHistoryAnalogic(String ip, String fecha, Set<DatoAnalogic> datos) {
 		this.ip = ip;
 		this.fecha = fecha;
 		this.datos = datos;
@@ -38,11 +38,11 @@ public class JSHistoryAnalogic {
 		this.fecha = fecha;
 	}
 
-	public Set<Dato> getDatos() {
+	public Set<DatoAnalogic> getDatos() {
 		return datos;
 	}
 
-	public void setDatos(Set<Dato> datos) {
+	public void setDatos(Set<DatoAnalogic> datos) {
 		this.datos = datos;
 	}
 

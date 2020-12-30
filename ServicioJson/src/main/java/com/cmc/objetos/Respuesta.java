@@ -54,7 +54,7 @@ public class Respuesta {
 		
 				for (Mensaje m : getDatos()) {
 					
-					if (m.getIp()==ip) {				
+					if (m.getIp().equals(ip)) {				
 						
 						m.setFecha(fecha);
 						m.setInfo(info);

@@ -6,13 +6,13 @@ public class JSHistoryDigital {
 	
 	private String ip;
 	private String fecha;
-	private Set<Dato> datos;
+	private Set<DatoDigital> datos;
 	
 	
 	public JSHistoryDigital() {
 	}
 
-	public JSHistoryDigital(String ip, String fecha, Set<Dato> datos) {
+	public JSHistoryDigital(String ip, String fecha, Set<DatoDigital> datos) {
 		this.ip = ip;
 		this.fecha = fecha;
 		this.datos = datos;
@@ -49,14 +49,14 @@ public class JSHistoryDigital {
 
 
 
-	public Set<Dato> getDatos() {
+	public Set<DatoDigital> getDatos() {
 		return datos;
 	}
 
 
 
 
-	public void setDatos(Set<Dato> datos) {
+	public void setDatos(Set<DatoDigital> datos) {
 		this.datos = datos;
 	}
 
@@ -67,8 +67,5 @@ public class JSHistoryDigital {
 	public String toString() {
 		return "JSHistoryDigital [ip=" + ip + ", fecha=" + fecha + ", datos=" + datos + "]";
 	}
-	
-	
-	
 
 }
