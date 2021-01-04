@@ -32,11 +32,11 @@ Configuration:
   Loggers:
     logger:
       - name: com.cmc
-        level: All
+        level: Error
         AppenderRef:
           - ref: KeepgrowingAppFile
     Root:
-      level: Info
+      level: Error
       AppenderRef:
         - ref: AllFile
         - ref: STDOUT

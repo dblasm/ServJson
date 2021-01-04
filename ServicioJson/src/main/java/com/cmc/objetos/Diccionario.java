@@ -20,14 +20,13 @@ public class Diccionario {
 		return diccionario;
 	}
 
-	public void generarDiccionario(List<EquiposAtributos> rs) {
-		
-	
+	public void generarDiccionario(List<EquiposAtributos> rs) {	
 		
 		try {
+			
 			if (rs !=null) {
 				
-				Traza_Log.registro(" ##### Resultados vista:"  +rs.toString() + "  ######",Traza_Log.LOG_INFO);
+				Traza_Log.registro(" ##### Resultados consulta vista equipos_atributos:"  + rs.toString() + "  ######",Traza_Log.LOG_DEBUG);
 				Traza_Log.registro(" ##### Se va a proceder a generar el diccionario #####",Traza_Log.LOG_INFO);
 	
 				Map<String, List<TagDictionary>> dicc = new HashMap<String, List<TagDictionary>>();			
@@ -42,9 +41,11 @@ public class Diccionario {
 				}
 	
 				Traza_Log.registro(" ##### Diccionario generado ######",Traza_Log.LOG_INFO);
+				Traza_Log.registro(" ##### Contenido diccionario:"  + dicc.toString() + "  ######",Traza_Log.LOG_DEBUG);
 				setDiccionario(dicc);
+				
 			}else {
-				Traza_Log.registro("objeto.null",Traza_Log.LOG_ERROR,new String[]{"lista equipos_atribtos"});	
+				Traza_Log.registro("objeto.null",Traza_Log.LOG_ERROR,new String[]{"vista equipos_atribtos"});	
 			}
 
 		} catch (Exception e) {

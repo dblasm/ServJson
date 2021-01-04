@@ -38,10 +38,6 @@ public class Equipo {
 		public Equipo() {
 			
 		}
-		
-
-
-
 
 		public Equipo(String ip, String tagname, String id_tipo, String descripcion, Set<Atributo> atributos) {
 		this.ip = ip;
@@ -50,10 +46,6 @@ public class Equipo {
 		this.descripcion = descripcion;
 		this.atributos = atributos;
 	}
-
-
-
-
 
 		//Accesores
 		public String getIp() {
@@ -91,15 +83,9 @@ public class Equipo {
 		}
 
 
-
-
-
 		public void setAtributos(Set<Atributo> atributos) {
 			this.atributos = atributos;
 		}
-
-
-
 
 
 		public String getDescripcion() {
@@ -109,14 +95,6 @@ public class Equipo {
 
 		public void setDescripcion(String descripcion) {
 			this.descripcion = descripcion;
-		}
-
-
-
-
-
-		
-		
-	
+		}	
 
 }

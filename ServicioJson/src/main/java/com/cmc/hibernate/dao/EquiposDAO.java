@@ -22,6 +22,4 @@ public class EquiposDAO {
 		return equiposAtributos.findAll();
 		
 	}
-
-
 }

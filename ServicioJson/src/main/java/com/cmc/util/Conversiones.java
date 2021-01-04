@@ -1,6 +1,7 @@
 package com.cmc.util;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 public class Conversiones {
 
@@ -57,5 +58,18 @@ public class Conversiones {
 			return Boolean.parseBoolean(valor);
 
 		}
+		
+	//Conversión de Date a Timestamp
+		public static String parseFecha(Date fecha) {
+					
+			if (fecha == null) {
+				return null;
+				}
+					
+				Timestamp ts=new Timestamp(fecha.getTime());
+				//SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+				return ts.toString();
+
+			}	
 
 }

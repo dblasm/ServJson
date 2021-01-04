@@ -29,6 +29,7 @@ public class Gestion_HistoryDigital implements IGestion_HistoryDigital{
 	@Override
 	@Transactional
 	public boolean cargarHistorico(JSHistoryDigital objeto,Diccionario diccionario) {
+		
 		try  {
 			
 			if (diccionario != null) {	
@@ -53,17 +54,19 @@ public class Gestion_HistoryDigital implements IGestion_HistoryDigital{
 					resultados.add(resultado);	
 				}			
 			}			
-				/// Save de los resultados
-				Controlador.respuesta.setFecha(new Date().toString());	
+				// Creando respuesta para tridium
+				Controlador.respuesta.setFecha(Conversiones.parseFecha(new Date()));	
 				Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Digital ,datos recibidos: " + objeto.getDatos().size() + " datos a escribir: " + resultados.size(),true);			
+				
+				// Guardar en base de datos
 				historyDigital_dao.cargarResultados(resultados);
 							
 			}else {
 				
 				Traza_Log.registro("objeto.null",Traza_Log.LOG_ERROR,new String[]{"diccionario"});
 				
-				// Save de los resultados
-				Controlador.respuesta.setFecha(new Date().toString());				
+				// Creando respuesta para tridium
+				Controlador.respuesta.setFecha(Conversiones.parseFecha(new Date()));				
 				Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Diccionario no generado, recibido un null",false);
 				
 				return false;
@@ -75,9 +78,9 @@ public class Gestion_HistoryDigital implements IGestion_HistoryDigital{
 			
 			Traza_Log.registro("try.catch.exception",Traza_Log.LOG_ERROR,new String[]{"cargaHistorico digital",e.getMessage()});
 			
-			// Save de los resultados
-			Controlador.respuesta.setFecha(new Date().toString());				
-			Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Fallo en cargar histórico analógico",false);
+			// Creando respuesta para tridium
+			Controlador.respuesta.setFecha(Conversiones.parseFecha(new Date()));				
+			Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Fallo en cargar histórico digital",false);
 			
 			return false;
 		}

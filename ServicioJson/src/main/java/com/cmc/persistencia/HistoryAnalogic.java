@@ -27,8 +27,6 @@ public class HistoryAnalogic {
 	private Float valor;
 	@Column(name = "tagname", nullable = false)
 	private String tagName; 
-
-
 	
 	// Constructores
 	public HistoryAnalogic() {

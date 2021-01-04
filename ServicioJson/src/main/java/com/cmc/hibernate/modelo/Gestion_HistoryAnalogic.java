@@ -42,14 +42,14 @@ public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 	@Override
 	@Transactional
 	public boolean cargarHistorico(JSHistoryAnalogic objeto,Diccionario diccionario) {
+		
 		try  {
+			
 			if (diccionario != null) {
-
 			
 				List<TagDictionary> tagNames = diccionario.getDiccionario().get(objeto.getIp());	
 				List<HistoryAnalogic> resultados = new ArrayList<HistoryAnalogic>();
 				Timestamp fecha = Conversiones.toTimestamp(objeto.getFecha());
-
 			
 			for (DatoAnalogic o : objeto.getDatos()) {
 				
@@ -69,29 +69,31 @@ public class Gestion_HistoryAnalogic implements IGestion_HistoryAnalogic {
 			
 			}
 			
-				// Save de los resultados
-				Controlador.respuesta.setFecha(new Date().toString());				
+				// Creando respuesta para tridium
+				Controlador.respuesta.setFecha(Conversiones.parseFecha(new Date()));				
 				Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Analogic ,datos recibidos: " + objeto.getDatos().size() + " datos a escribir: " + resultados.size(),true);
-				historyAnalogic_dao.cargarResultados(resultados);
-			
+				
+				// Guardar en base de datos
+				historyAnalogic_dao.cargarResultados(resultados);	
+				
 			}else {
 				
 				Traza_Log.registro("objeto.null",Traza_Log.LOG_ERROR,new String[]{"diccionario"});
 				
-				// Save de los resultados
-				Controlador.respuesta.setFecha(new Date().toString());				
+				// Creando respuesta para tridium
+				Controlador.respuesta.setFecha(Conversiones.parseFecha(new Date()));				
 				Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Diccionario no generado, recibido un null",false);
 				
 				return false;
-			}		
-			
+			}			
 			
 			return true;
 		} catch (Exception e) {
+			
 			Traza_Log.registro("try.catch.exception",Traza_Log.LOG_ERROR,new String[]{"cargaHistorico analógico",e.getMessage()});
 			
-			// Save de los resultados
-			Controlador.respuesta.setFecha(new Date().toString());				
+			// Creando respuesta para tridium
+			Controlador.respuesta.setFecha(Conversiones.parseFecha(new Date()));				
 			Controlador.respuesta.modificar(objeto.getIp(),objeto.getFecha(),"Fallo en cargar histórico analógico",false);
 			
 			return false;

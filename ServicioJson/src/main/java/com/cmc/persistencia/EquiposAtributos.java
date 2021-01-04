@@ -33,9 +33,7 @@ public class EquiposAtributos {
 	
 	public EquiposAtributos() {		
 		
-	}
-	
-	
+	}	
 
 	public EquiposAtributos(int id, String tagname, String ip, String tipo, float escalado,
 			boolean esEscalado, boolean agregado, int tiempoAgregado) {
@@ -48,9 +46,7 @@ public class EquiposAtributos {
 		this.esEscalado = esEscalado;
 		this.agregado = agregado;
 		this.tiempoAgregado = tiempoAgregado;
-	}
-
-	
+	}	
 
 	public int getId() {
 		return id;
@@ -105,15 +101,11 @@ public class EquiposAtributos {
 		this.tiempoAgregado = tiempoAgregado;
 	}
 
-
-
 	@Override
 	public String toString() {
 		return "EquiposAtributos [id=" + id + ", tagname=" + tagname + ", ip=" + ip + ", tipo=" + tipo  + ", escalado=" + escalado + ", esEscalado=" + esEscalado + ", agregado=" + agregado
 				+ ", tiempoAgregado=" + tiempoAgregado + "]";
-	}
-	
-	
+	}	
 	
 }
 	

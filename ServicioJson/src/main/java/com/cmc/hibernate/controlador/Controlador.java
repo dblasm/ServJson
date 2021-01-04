@@ -37,7 +37,6 @@ public class Controlador{
 	private Gestion_HistoryDigital gestion_historyDigital;
 	@Autowired
 	private Gestion_Equipos gestion_Equipos;
-
 	
 	
 	//Consulta Json para datos Analógicos
@@ -48,9 +47,10 @@ public class Controlador{
 		if (diccionario == null) {
 			diccionario = gestion_Equipos.crearDiccionario();
 			respuesta = gestion_Equipos.crearRespuesta();
-		}			
-			
-        return ResponseEntity.ok().body(gestion_historyAnalogic.cargarHistorico(JSHistoryAnalogic,diccionario));
+		}
+		Boolean res = gestion_historyAnalogic.cargarHistorico(JSHistoryAnalogic,diccionario);
+		//System.gc();	
+        return ResponseEntity.ok().body(res);
     }
 
 	
@@ -63,18 +63,17 @@ public class Controlador{
 			diccionario = gestion_Equipos.crearDiccionario();
 			respuesta = gestion_Equipos.crearRespuesta();
 		}			
-			
-        return ResponseEntity.ok().body(gestion_historyDigital.cargarHistorico(JSHistoryDigital,diccionario));
+		Boolean res = gestion_historyDigital.cargarHistorico(JSHistoryDigital,diccionario);	
+		//System.gc();
+        return ResponseEntity.ok().body(res);
     }
 	
-	//Respuesta para Tridium
-	
+	//Respuesta para Tridium	
 		@GetMapping("/tridium/")
 	    public ResponseEntity<Respuesta> respuesta() {			
 						
 	        return ResponseEntity.ok().body(respuesta);
 	        
-	    }
-		
+	    }	
 
 }

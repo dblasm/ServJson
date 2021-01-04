@@ -11,7 +11,4 @@ public class ServicioJsonApplication {
 		SpringApplication sa = new SpringApplication (ServicioJsonApplication.class);	
 		sa.run(args);
 	}
-	
-
-
 }

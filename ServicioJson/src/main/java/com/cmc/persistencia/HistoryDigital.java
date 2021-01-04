@@ -31,15 +31,12 @@ public class HistoryDigital {
 	public HistoryDigital() {
 	}
 
-
-
 	public HistoryDigital(BigInteger id, Timestamp fecha, Boolean valor, String tagName) {
 		this.id = id;
 		this.fecha = fecha;
 		this.valor = valor;
 		this.tagName = tagName;
 	}
-
 
 
 	public BigInteger getId() {

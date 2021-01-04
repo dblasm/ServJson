@@ -13,7 +13,6 @@ public class Respuesta {
 
 	public Respuesta() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Respuesta(String fecha,List<Mensaje> data) {
@@ -50,7 +49,7 @@ public class Respuesta {
 		boolean find = false;
 		ip = ip.replace(".", "_");
 		
-		if (getDatos() !=null) {
+		if (getDatos() != null) {
 		
 				for (Mensaje m : getDatos()) {
 					
@@ -74,11 +73,9 @@ public class Respuesta {
 			List<Mensaje> dt = new ArrayList<Mensaje>();
 			dt.add(new Mensaje(ip,fecha,info,estado));
 			setDatos(dt);
-		}
-		
+		}		
 		
 	}
-
 
 }
 

@@ -18,14 +18,9 @@ public class JSHistoryDigital {
 		this.datos = datos;
 	}
 
-
-
-
 	public String getIp() {
 		return ip;
 	}
-
-
 
 
 	public void setIp(String ip) {
@@ -33,13 +28,9 @@ public class JSHistoryDigital {
 	}
 
 
-
-
 	public String getFecha() {
 		return fecha;
 	}
-
-
 
 
 	public void setFecha(String fecha) {
@@ -47,20 +38,13 @@ public class JSHistoryDigital {
 	}
 
 
-
-
 	public Set<DatoDigital> getDatos() {
 		return datos;
 	}
 
-
-
-
 	public void setDatos(Set<DatoDigital> datos) {
 		this.datos = datos;
 	}
-
-
 
 
 	@Override

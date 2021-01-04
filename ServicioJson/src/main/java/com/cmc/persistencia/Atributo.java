@@ -117,35 +117,5 @@ public class Atributo {
 	public void setTiempoAgregado(int tiempoAgregado) {
 		this.tiempoAgregado = tiempoAgregado;
 	}
-
-		
-/*
-	public Equipo getEquipo() {
-		return equipo;
-	}
-
-
-	public void setEquipo(Equipo equipo) {
-		this.equipo = equipo;
-	}
-*/
-
-
-
-	
-
-
-
-
-	
-
-	
-
-
-	
-	
-	
-	
-	
 	
 }

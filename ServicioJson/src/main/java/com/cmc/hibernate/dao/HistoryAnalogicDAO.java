@@ -20,9 +20,11 @@ public class HistoryAnalogicDAO {
 	public boolean cargarResultados(List<HistoryAnalogic> resultados) {
 		try  {
 			
-			if (resultados != null) {			
-				historyAnalogic_repo.saveAll(resultados);
+			if (resultados != null) {
+				
+				historyAnalogic_repo.saveAll(resultados);					
 				return true;
+				
 			}else {
 				
 				Traza_Log.registro("objeto.null",Traza_Log.LOG_ERROR,new String[]{"lista HistoryAnalogic"});
